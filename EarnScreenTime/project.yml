@@ -1,0 +1,50 @@
+name: EarnScreenTime
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""   # <- put your Apple team ID here
+targets:
+  EarnScreenTime:
+    type: application
+    platform: iOS
+    sources: [App, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.earnscreentime
+        INFOPLIST_FILE: App/Info.plist
+    info:
+      path: App/Info.plist
+      properties:
+        NSCameraUsageDescription: Camera counts your reps.
+        UILaunchScreen: {}
+    entitlements:
+      path: App/App.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups: [group.com.example.earnscreentime]
+    dependencies:
+      - target: Monitor
+  Monitor:
+    type: app-extension
+    platform: iOS
+    sources: [Monitor, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.earnscreentime.monitor
+        INFOPLIST_FILE: Monitor/Info.plist
+    info:
+      path: Monitor/Info.plist
+      properties:
+        CFBundleDisplayName: Monitor
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).MonitorExtension
+    entitlements:
+      path: Monitor/Monitor.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups: [group.com.example.earnscreentime]
