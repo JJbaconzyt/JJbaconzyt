@@ -342,7 +342,7 @@ Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji ->
 
 Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 
-[Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps: no Legendary tank; no Epic or Legendary medic; Economy only at Common. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
+[Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps (no Legendary tank, no Epic/Legendary medic, Economy only at Common) are accepted (User): lower-rarity units get replaced, so not every role needs every rarity. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
