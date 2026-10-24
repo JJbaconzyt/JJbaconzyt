@@ -165,7 +165,7 @@ Review flags ([Inference]):
 
 ## 7. Gacha
 - Gems earnable free (stage clears, daily, challenges); optional paid packs.
-- Unit pity: Mythic at 200 pulls, Mythic rate 1% (User). Lower-tier pity open.
+- Unit pity: Mythic at 200 pulls, Mythic rate 1%; Legendary at 40 pulls (User).
 - Rate-up banner rotates, carrying one featured unit.
 - Duplicates convert to upgrade shards (small, capped); Commons also usable as evolve fodder.
 - Odds shown in the summon screen.
@@ -317,7 +317,7 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 - Abilities are now rare, matching "exclusive and strong"; the 4 ability units become the hard-content picks.
 - Damage trait disables passives, so it costs Mythics more than filler units.
 
-## 15. Non-Mythic kits (proposal)
+## 15. Non-Mythic kits (approved by user)
 Rules: passives only, no abilities. Commons have no passive (their role is the kit). Base DPS anchors: Common ~50, Rare ~100, Epic ~170, Legendary ~260. Canon references are from my knowledge, [Unverified].
 Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji -> Sakura (gives an early heal medic). Chad added as the Epic tank (User asked for one).
 
@@ -348,10 +348,8 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
-1. Non-Mythic kits: approve section 15 (incl. Usopp->Nami, Renji->Sakura swaps, Chad added).
-2. Confirm in-between DPS anchors: Rare ~100, Epic ~170, Legendary ~260.
+2. DPS ladder: user wants more gap between rarities (pending: keep Mythic ~375 or raise it).
 3. Damage trait at 300% (flagged for rebalancing in section 6).
-4. Lower-tier summon pity (Mythic pity 200 is set).
 5. Shop: potion/temporary equipment list and prices.
 6. Does a trait pick reset on a later reroll?
 7. Does the bench count for Contagious (1 per team)?
