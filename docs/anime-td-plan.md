@@ -91,7 +91,7 @@ User decisions:
   - Tanks naturally have high SPA, so they only get ~1-2 hits per round (User); lifesteal tank stall is low risk.
   - No stacking traits (User; one trait per unit).
   - Boss wave (User): boss + 4 DPS, no tank, no healer.
-  - Anti-heal (User): units with anti-heal heal 50% less, both healing themselves (incl. lifesteal) and others. Lasts 2 turns. Both sides. [Inference] Earlier the user said anti-heal blocks lifesteal; the newer rule (50% less) is used. It weakens the healer's output, so to counter an enemy medic you debuff the medic, not its targets.
+  - Anti-heal (User): units with anti-heal heal 50% less, both healing themselves (incl. lifesteal) and others. Lasts 2 turns. Both sides. Confirmed (User): 50% less replaces the earlier 'blocks lifesteal'; you counter an enemy medic by debuffing the medic.
   - [Inference] Barrage at 50%: vs 5 enemies, 0.5 x 5 = 2.5x total damage, below the Damage trait's 4x single target. It still passes tanks (AoE). Playtest.
   - [Inference] Three classless traits (Damage, Barrage, Control) get no 20% class bonus for anyone; the class system now covers fewer traits.
 - Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." Confirmed (User: "Slower"): SPA x (1 + bar/2), so 100% tired = 1.5x SPA. Skip-turn plus SPA nerf at 75%+ stacks on purpose (User).
@@ -211,7 +211,7 @@ Update principle: no single unit absorbs months of dev time.
 14. Infinity Castle "expansion": what is the twist?
 15. Bench: resolved (2 reserve).
 16. Tiredness: resolved.
-21. Taunt rule: resolved. Open: final class list (Speedster, Specialist, Punisher, Medic, Economy?, Balanced?).
+21. Taunt rule: resolved. Class list accepted as-is (User: "I like what we have"): Speedster, Specialist, Punisher, Medic, Economy, Balanced.
 17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
