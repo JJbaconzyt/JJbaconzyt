@@ -63,7 +63,7 @@ User decisions:
 [Inference] Autoplay still has to decide placement and recall, which is where it should fall behind a human on hard content.
 [Unverified] Roblox rules on macros/automation; check before building anti-macro measures.
 
-### 3.4b Shop potions (User list; values and prices are my placeholders)
+### 3.4b Shop potions (approved by user; potions only, no temporary equipment)
 Bought with in-run cash (per-wave cash ~1000). Not available in Gauntlet. Autoplay does not buy them.
 
 | Potion | Effect (one unit) | Price |
@@ -78,7 +78,7 @@ Bought with in-run cash (per-wave cash ~1000). Not available in Gauntlet. Autopl
 
 ### 3.4 Economy
 - Per-wave cash is a set number (about 1000 as a starting guess, User).
-- Team stays fixed (no unit shop), but a shop exists for temporary equipment/potions bought with in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
+- Team stays fixed (no unit shop), but a shop sells potions (potions only, no temporary equipment) for in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
 - Shop uses in-run cash only (User). Cash also buys unit upgrades (User). Autoplay does not use the shop (User).
 
 ### 3.5 Health, bench, tiredness (User)
@@ -427,7 +427,6 @@ Kit tables above use the real names for clarity; the game uses these. They avoid
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
-5. Shop: confirm potion values/prices (section 3.4b); is temporary equipment also sold?
 6. Does a trait pick reset on a later reroll?
 7. Does the bench count for Contagious (1 per team)?
 8. Raid payout (300 gems proposed) and clear length: set in testing.
