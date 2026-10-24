@@ -251,6 +251,39 @@ Flags ([Inference]):
 - 1% Mythic rate: about 13% of players reach the 200 pity without a Mythic (0.99^200). Pity = ~10-12 days of heist income.
 - 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
 
+## 13. Equipment (proposal; user decided slots, sources, stacking)
+User: 3 slots (helmet, chest plate, weapon); buffs stack on top of traits; crafted from story/raid/challenge materials; prestigious gear from the weekly heist (higher rounds = better chance). No stat rerolls.
+
+Slot roles (proposal):
+- Helmet = utility (tiredness, debuffs, healing).
+- Chest = defense (HP, damage reduction).
+- Weapon = offense (damage, SPA, crit).
+
+Tiers: Basic (common materials), Advanced (raid/challenge materials), Prestigious (weekly heist only).
+Rule: every piece has one upside and one downside, so there is no single best item (Balakay's "Daggers of Destruction 99%" complaint).
+
+| Slot | Item | Upside | Downside |
+|---|---|---|---|
+| Helmet | Calm Band | -25% tiredness gain | -10% damage |
+| Helmet | Clear Mind Mask | Debuffs on this unit last 1 turn less | -10% HP |
+| Helmet | Healer's Hood | +25% healing done | +10% tiredness gain |
+| Chest | Iron Plate | +25% HP | +15% SPA (slower) |
+| Chest | Light Vest | -10% SPA (faster) | -15% HP |
+| Chest | Thorn Mail | Reflect 10% damage taken | -20% healing received |
+| Weapon | Heavy Blade | +25% damage | +15% SPA (slower) |
+| Weapon | Quick Edge | -20% SPA (faster) | -10% damage, +10% tiredness gain |
+| Weapon | Sharp Fang | +15% crit chance | -10% HP |
+
+Prestigious (weekly heist), one unique effect each:
+- Helmet "Second Wind": first time tiredness hits 75% in a run, reset it to 40%.
+- Chest "Last Stand": survive one lethal hit at 1 HP per run; then -20% HP for the rest of the run.
+- Weapon "Executioner": +50% damage to enemies under 25% HP; -15% damage otherwise.
+
+Balance guardrails ([Inference]):
+- Equipment bonuses add together; their total is capped (e.g. +40% damage, -30% SPA from equipment).
+- Advanced/Prestigious = stronger numbers on the same tradeoff shape, not strictly better.
+- Numbers are placeholders; tune in playtest.
+
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
 2. Team size and art pipeline (Roblox-style models vs high-poly).
@@ -278,3 +311,4 @@ Flags ([Inference]):
 24. Raid: resolved.
 25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
+27. Equipment: approve item list, the downside rule, and the equipment cap.
