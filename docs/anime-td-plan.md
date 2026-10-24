@@ -86,11 +86,11 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 | Trait | Definition |
 |---|---|
 | Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would. User clarification: "Doubling effect only applies when a unit that doesn't generate cash has the trait and is on the field killing when applicable". Final (User): per-wave cash is a set number; kills made by the unit with the Farm trait give double cash |
-| Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User) |
+| Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User). REWORK needed: there is no base in the auto battler (User asked me to rework it). PROPOSAL (not user-approved): global range on the grid, single target only, always targets the enemy with the highest current HP (anti-elite/boss sniper); the cost is no multi-target and no choice of target |
 | Damage (rarest) | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (User confirmed: attacks twice as often) |
 | Control | "each hit applies random debuff effect"; bosses resist (User) |
-| Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
+| Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP. REWORK (User): "remove the spread, buff percent damage to 25%/5% of max for boss to compensate". Current: no spread; contagious enemies take 25% of max HP (5% of max HP for bosses). The slow after 3 hits is not mentioned in the rework (keep or drop: question 22) |
 | All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
 
 Obtaining traits (User): through story, codes, and challenges. Codes give 1-2 rerolls, restricted to updates.
@@ -101,7 +101,7 @@ Latest decision (User): "there's only gonna be mythic traits, each equal odds, s
 
 Review flags:
 - [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
-- [Inference] Contagious: 10% max HP spreading to 3 enemies per hit scales well against swarms. Chain rules not yet defined.
+- [Inference] Contagious (reworked): 25% of max HP per proc, without spread, is flat percent damage. It ignores enemy HP scaling, so it is strongest on high-HP non-bosses; if it procs every hit, four hits kill any normal enemy. Define proc frequency (per hit, per cooldown).
 - [Inference] Seven traits need at least as many classes; Contagious (1/team) and All rounder need a class or no class bonus.
 
 ## 4. Enemies + stages
@@ -182,12 +182,16 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
    - User: Contagious needs a "slight rework". User floated a "medic" (unit/class) ("Maybe medic?"), presumably to heal persistent damage; confirm.
    - [Unverified] User says Balakay "lit despised" Anime Rangers X. In the Galaxies transcript he compared Galaxies to an "anime Rangers X type of game" as a criticism; I did not see a full review of Rangers X.
    - [Inference] Persistent damage plus recall makes this an attrition game: healing, recall timing, and who tanks become the skill. Good for resisting macros, since autoplay must decide recall and placement.
-   - [Inference] With ~25 enemies in groups and a 5-unit team, groups are roughly 5 enemies each (5 groups); confirm.
+   - [Inference] With ~25 enemies in groups and a 5-unit team, groups are roughly 5 enemies each (5 groups); confirmed by user.
+   - Medics (User): medic is a unit, with several types (buff-oriented, pure heals, cleanser, etc.), so no single default medic. Recall: both the player and autoplay can recall units.
    - [Inference] "Scale up, not down" keeps a floor (weak teams face baseline), so tier gaps survive at the low end; strong teams face harder enemies, so they need better rewards or the extra power feels pointless.
    - [Inference] Scaling enemies to unit strength can erase the visible rarity gaps and the reason to grind (user wants Mythic >> Common). Cap the scaling, e.g. floors/modes have a minimum and maximum enemy power.
    - [Inference] Only 5 enemies at a time: Contagious ("spread to 3 other enemies") hits most of the enemy team; Farm trait on one of 5 slots costs a combat slot; 1/team Contagious is easier to enforce.
 20. Abilities (User): abilities are player-triggered. There is an autocast toggle; it is not locked, but autoplay never selects or enables it. A player can toggle it on themselves, but then they are either actively playing or running an external macro. Easy grinds shouldn't need abilities; abilities are "exclusive and strong" (hard content). Open ([Inference]): if the toggle persists between runs, autoplay plus a saved toggle equals full AFK, defeating the design. Decided (User): the autocast toggle resets every run.
 21. Does the team grow between rounds (shop, merges) or is it fixed pre-fight?
+22. Contagious: is the 25% damage per proc, how often does it proc, and does the 15% slow after 3 hits stay?
+23. Range trait rework: approve the proposal in 3.5 or change it.
+24. Autoplay recall rules: what triggers an automatic recall (HP threshold, group cleared)?
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
 12. Commons: evolve/fodder rules (how many Commons per upgrade, which target units).
