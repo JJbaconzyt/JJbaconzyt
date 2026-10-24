@@ -292,6 +292,29 @@ Balance guardrails:
 - Advanced/Prestigious = stronger numbers on the same tradeoff shape, not strictly better.
 - Numbers are placeholders; tune in playtest.
 
+## 14. Mythic kits (proposal; roles for Infinity Castle and raid units from user)
+Rules: base DPS ~375 for all Mythics, small hierarchy allowed (Muzan strongest, per user). One simple passive (two at most), one manual ability. Numbers are placeholders.
+
+| Unit | Source | Class / type | User's role | SPA | Passive | Ability (manual) |
+|---|---|---|---|---|---|---|
+| Zenitsu | Castle 5 | Speedster | Low SPA | Very fast | Thunderclap: every 4th attack hits the backline, ignoring taunt | Godspeed: 6 rapid hits on one target; Zenitsu then jumps to 75% tired ("falls asleep") |
+| Inosuke | Castle 10 | Speedster | Boss killer | Fast | Beast Sense: +40% damage to bosses and to enemies above 50% HP | Fang Rush: 3 hits, each +100% damage vs bosses |
+| Giyu | Castle 20 | Balanced | Ability / AoE / all-rounder | Medium | Calm Water: gains no tiredness from taking damage | Dead Calm: 2 turns, takes no damage and counters every hit with an AoE slash |
+| Douma | Castle 35 | Specialist | Debuff | Medium | Frozen Lotus: attacks apply Frostbite (slower SPA, stacks 2) and anti-heal | Cold White Princess: all enemies skip 1 turn (bosses: slowed instead) |
+| Kokushibo | Castle 50 | Punisher | Raw damage | Slow | Moon Blades: each attack also hits 1 random enemy for 40% | Sixteenth Form: 5x hit on one target + 50% to all enemies |
+| Muzan | Castle 100 | Specialist | DoT, strongest | Medium | Blood Curse: attacks apply Bleed (stacks to 5) | Demon King: every enemy takes all remaining Bleed damage instantly |
+| Gojo | Raid | Medic (buff-type) | Support / damage | Medium | Infinity: first hit on Gojo each group does 0 damage; adjacent allies +15% damage | Unlimited Void: enemies skip 1 turn, allies +30% damage for 2 turns |
+| Sukuna | Raid | Punisher | AoE, lesser DoT | Medium | Dismantle: attacks hit up to 3 enemies | Malevolent Shrine: 3 turns, all enemies take slashes each turn (weaker DoT than Muzan) |
+| Sung Jin-woo | Banner | Specialist | (proposal) Summoner | Medium | Arise: 25% chance a slain non-boss enemy rises as a shadow ally for the group (max 2) | Monarch's Domain: shadows and Jin-woo +50% damage for 2 turns |
+| Luffy | Banner | Balanced / Tank type | (proposal) Tank | Slow | Rubber Body: takes 25% less damage | Gear 5: 2 turns, attacks hit all enemies, immune to debuffs; then +30% tiredness |
+| Goku | Banner | Punisher | (proposal) Burst damage | Medium | Saiyan Rage: +5% damage each time he is hit (max +50%, resets on recall) | Kamehameha: charge 1 turn, then a huge line hit |
+
+[Inference] Notes:
+- Sung Jin-woo is kept simple on purpose; Balakay's Vanguards criticism was an overcomplicated SJW with a long grind.
+- Zenitsu's passive and Godspeed tie into taunt and tiredness, the game's own systems.
+- Gojo is the only Mythic medic (buff-type). Heal-type medics at Mythic: none yet.
+- Damage trait disables passives, so it costs these units more than filler units, as intended.
+
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
 2. Team size and art pipeline (Roblox-style models vs high-poly).
@@ -320,3 +343,4 @@ Balance guardrails:
 25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
 27. Equipment: resolved (approved; one prestigious per unit). Numbers tuned in playtest.
+28. Mythic kits: approve or change section 14.
