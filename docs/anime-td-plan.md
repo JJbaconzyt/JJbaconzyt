@@ -386,7 +386,7 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 
 [Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps (no Legendary tank, no Epic/Legendary medic, Economy only at Common) are accepted (User): lower-rarity units get replaced, so not every role needs every rarity. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
-## 16. In-game names (User: altered but recognizable; names are my proposal)
+## 16. In-game names (approved by user)
 Kit tables above use the real names for clarity; the game uses these. They avoid copying competitors' parody names (Zuffy, Vogita, Song Jinwu, etc.). Final approach (User): the first set of light changes, plus one more letter swapped or added (e.g. Ruffy -> Ruffey, Muzen -> Muuzen).
 
 | Character | In-game name | Rarity |
@@ -437,4 +437,3 @@ Still open:
 12. Tech plan for the build session (scripts, data, saving).
 13. Content for the update after launch.
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
-15. Names: resolved (altered but recognizable, section 16). Approve the name list.
