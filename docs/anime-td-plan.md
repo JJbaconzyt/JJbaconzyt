@@ -1,4 +1,4 @@
-# Anime Auto Battler (Roblox) – Full Plan
+# Anime Convergence (Roblox auto battler) – Full Plan
 
 Status: draft, planned in a cloud session; building will happen in a separate environment with Roblox tooling.
 Legend: "User:" = decision or wording from the user. [Inference] / [Speculation] / [Unverified] = my labels. "Proposal" = my idea, not approved.
@@ -428,14 +428,13 @@ Kit tables above use the real names for clarity; the game uses these. They avoid
 - Solo only (no co-op).
 - Trait rerolls: a later reroll also lets the player pick on the 3rd roll again.
 - Contagious (1 per team) counts the bench too (7-unit run roster).
-- Name: "Anime ____". Candidates (proposal), checked against Roblox search on 2026-10-24: Anime Rift, Anime Convergence, Anime Crossfire, Anime Fracture, Anime Warbands showed no same-name game in top results. Taken: Anime Nexus (an RNG game, ~630 players), Anime Multiverse (tiny game). [Inference] Roblox does not reserve names; a clash only matters for search.
+- Name (User): **Anime Convergence**. Other candidates considered, checked against Roblox search on 2026-10-24: Anime Rift, Anime Convergence, Anime Crossfire, Anime Fracture, Anime Warbands showed no same-name game in top results. Taken: Anime Nexus (an RNG game, ~630 players), Anime Multiverse (tiny game). [Inference] Roblox does not reserve names; a clash only matters for search.
 
 ## 11. Open questions
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
 8. Raid payout (300 gems proposed) and clear length: set in testing.
-11. Game name: "Anime ____" (User); candidates in section 17.
-12. Tech plan for the build session (scripts, data, saving).
+12. Tech plan for the build session (scripts, data, saving): later (User).
 13. Content for the update after launch: TBD (User).
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
