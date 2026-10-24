@@ -128,7 +128,13 @@ User decisions:
 | Legendary | Between Epic and Mythic (User: new tier) |
 | Mythic | Needed for top-end content |
 
-Guardrails ([Inference]): scheduled powercreep with written multipliers; new units fill existing tiers; old units buffed in rebalance patches; a hard cap on combined rarity x trait multiplier, set by playtest. Example: Mythic 3x with a 4x trait is 12x over a plain Common.
+Power numbers (User):
+- No set rate per tier; each unit has its own base stats. Example: Common ~50 base DPS, Mythic ~375 base DPS.
+- All Mythics around the same power level; a small hierarchy or niche units is fine.
+- No cap on combined rarity x trait x equipment. Enemies are balanced around units, not the other way around. "Monkey brain likes big number."
+- Proposal (in-between anchors): Rare ~100, Epic ~170, Legendary ~260 base DPS.
+
+[Inference] Risks: no cap plus ongoing powercreep inflates numbers over time (Balakay mentioned ALS reaching billions/trillions, and disliked Vanguards dividing everything by 10 to fix it). Plan number formatting (K/M/B) from day one. Balancing enemies around top units can leave weaker accounts behind; the heist/scaling floor helps.
 
 Balance rules:
 1. Pick-rate telemetry per unit and trait; above 40% of top-tier clears gets reviewed (starting guess).
@@ -190,7 +196,7 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 | 0 | Resolve IP decision, name, art style, enemy design |
 | 1 | Prototype: grid, 5v5 auto-combat, recall with persistent damage, 3 units, 1 enemy group |
 | 2 | MVP: one map (~25 enemies), 6 units including a medic, traits, autoplay and ability toggle, tutorial, summon with pity, save data |
-| 3 | Closed playtest + pick-rate telemetry; tune balance and the multiplier cap |
+| 3 | Closed playtest + pick-rate telemetry; tune balance and enemy scaling |
 | 4 | Launch (heavy, see 12): story, challenges, raid, daily/weekly heist, Infinity Castle with Demon Slayer units |
 | 5 | Update 1 drops with release (User), i.e. launch = update 1 (Demon Slayer + Infinity Castle) |
 | 6 | Cadence: small frequent updates, one rebalance patch per quarter |
@@ -243,7 +249,7 @@ Flags ([Inference]):
 - Mythic count rising (11+) while Common-Legendary are "filler" (User). Filler cut to 15 non-Mythics (User decision, counts proposed). [Inference] Give them a lasting job (evolve fodder, equipment materials).
 - Most gacha pulls (99%) land on filler, and only 3 Mythics are on the banner while 8 come from content. The banner's main value is Sung Jin-woo + 2.
 - Sung Jin-woo was the center of Balakay's Vanguards backlash; expect comparisons.
-- Rarity x trait x equipment = three stacked multipliers; the combined cap matters more now.
+- Rarity x trait x equipment stack with no cap (User); enemies are tuned around them.
 - Infinity Castle self-caps by difficulty, so gem inflation is limited; top players still earn most.
 - Floor 100 Muzan is a top-player skill chase; Balakay liked hard unlock stages over long grinds.
 - Prestigious gear behind high weekly rounds: rich-get-richer.
@@ -292,7 +298,7 @@ Balance guardrails:
 3. Solo vs co-op.
 4. Art style and setting.
 5. Pity numbers and odds for units.
-6. Rarity multiplier per tier and the combined cap with traits.
+6. Resolved: per-unit base stats (Common ~50, Mythic ~375 DPS), no cap. Confirm in-between anchors.
 7. Which classes exist in full, and the final class-to-trait map.
 8. Enemy types and boss mechanics for the auto battler.
 9. Shop: item list (equipment, potions), prices, and whether cash also buys unit upgrades.
