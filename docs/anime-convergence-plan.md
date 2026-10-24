@@ -430,11 +430,114 @@ Kit tables above use the real names for clarity; the game uses these. They avoid
 - Contagious (1 per team) counts the bench too (7-unit run roster).
 - Name (User): **Anime Convergence**. Other candidates considered, checked against Roblox search on 2026-10-24: Anime Rift, Anime Convergence, Anime Crossfire, Anime Fracture, Anime Warbands showed no same-name game in top results. Taken: Anime Nexus (an RNG game, ~630 players), Anime Multiverse (tiny game). [Inference] Roblox does not reserve names; a clash only matters for search.
 
+## 18. Tech plan (for the build session; planning only, no code here)
+Roblox API and library names below are from my knowledge, [Unverified]; confirm in the build session.
+
+### 18.1 Principles
+- **Server-authoritative.** The client only sends intents (place unit, recall, bench, use ability, buy potion, summon). The server checks everything (ownership, cash, cooldowns, rate limits). The client only displays.
+- **Data-driven content.** Units, traits, equipment, potions, enemies, and stages live in config tables. Balance changes are data edits, not code edits.
+- **One modifier pipeline.** Traits, passives, equipment, potions, status effects, and buffs all plug into the same stat/hook system. That keeps "stacking with no cap" predictable and testable.
+- **Pure combat simulation.** The combat sim is a plain Luau module with no Roblox instances, so it can be unit-tested outside Studio.
+
+### 18.2 Tooling
+- Luau with type checking (`--!strict`).
+- Rojo (files on disk sync into Studio) + Git, so code lives in this repo.
+- Lint/format: Selene + StyLua.
+- Tests: pure modules tested with a standalone Luau runtime (e.g. Lune) so a cloud session without Studio can still run tests; seeded `Random` makes combat tests repeatable.
+- Optional: a Roblox Studio MCP server in the build environment (needs Studio running locally).
+
+### 18.3 Places and servers
+- **Lobby place:** summoning, inventory, crafting, mode select.
+- **Match place:** one run per reserved server (TeleportService reserved servers). Solo game, so one player per match server: isolated state, no lobby lag, simpler anti-cheat.
+- Match server loads the profile itself from the DataStore; teleport data is only a hint (clients can tamper with it).
+
+### 18.4 Code layout (Rojo)
+```
+src/
+  shared/          -> ReplicatedStorage.Shared
+    Config/        Units, Traits, Equipment, Potions, Enemies, Stages, Gacha, Economy
+    Combat/        pure sim: Grid, Unit, Targeting (taunt), Damage, Status, Tiredness, Turns
+    Types          shared type definitions
+    Util/          NumberFormat (K/M/B/T), Random helpers
+  server/          -> ServerScriptService.Server
+    Services/      Data, Match, Autoplay, Gacha, Traits, Crafting, Shop, Heist, Castle, Purchase, Policy, Analytics
+    Remotes        intent validation + rate limiting
+  client/          -> StarterPlayerScripts.Client
+    Controllers/   Lobby UI, Summon UI, Placement, CombatView, HUD (HP/tired bars, damage numbers), Settings
+places/            lobby.project.json, match.project.json
+tests/             sim + economy tests
+```
+
+### 18.5 Player data (DataStore)
+- Session locking to prevent item duplication (a library such as ProfileStore, or a hand-written lock).
+- Schema with a `version` field for migrations.
+- Contents: gems, materials, units (id, level, trait, equipment slots), trait rolls and per-unit roll counter, equipment inventory, summon pity counters (Mythic 200, Legendary 40), story/challenge progress, Infinity Castle best floor + first-clear flags, heist daily/weekly reset keys (UTC day/week index), redeemed codes, settings, purchase receipts.
+- Save on interval, on leave, and on server shutdown.
+- Infinity Castle leaderboard: an ordered DataStore.
+- No trading planned; if added later it is the biggest dupe risk.
+
+### 18.6 Combat simulation
+- **Clock:** fixed tick on the server. Each unit has an action timer = SPA x (1 + tired/2). At 75%+ tired it skips every other turn.
+- **A turn** = move one step on the grid toward a legal target, or attack. Tiredness: move +3%, kill +5%, hit taken +7.5% (tanks 30% less).
+- **Targeting:** living tanks must be killed first (both sides); AoE still hits units behind; bosses are not tanks.
+- **Hooks:** onTurnStart, onAttack, onHit, onKill, onGroupStart, onRecall. Passives, traits, equipment, and statuses register on these hooks.
+- **Status effects:** bleed, DoT, frostbite, freeze/skip turn, stun, slow, anti-heal (healer heals 50% less for 2 turns). Bosses resist control.
+- **Run state:** 5 on field + 2 bench; recall after each group (-10% tired, no heal); sitting out heals 20%/round and -40% tired; fallen units stay down.
+- **Output:** the server sends a compact event stream (moves, hits, damage, deaths) to the client, which animates it. The client never computes results.
+
+### 18.7 Run flow and modes
+- Match service: load stage config, spawn enemy groups (random squad presets, scaling up to the player's power), cash per wave, unit upgrades, potions shop, recall/bench, win/lose, rewards.
+- Modes are stage configs + reward tables: story (3 stages x 5 acts), challenges, raid, daily/weekly heist (10 rounds, scaling under->over), Infinity Castle (5 rounds per floor, boss every 5 floors, alternating buffs/debuffs), Gauntlet difficulty (no shop, no heals, 1.5x tired, 2.5x luck).
+
+### 18.8 Autoplay and abilities
+- Autoplay runs on the server: placement heuristic (tanks front, others behind), buys upgrades, recalls when a group dies. Never uses abilities or the shop.
+- Autocast toggle is a per-run flag, reset at run start.
+
+### 18.9 Gacha, traits, crafting
+- All rolls on the server with `Random`.
+- Summon: 250 gems; Mythic 1% with 200 pity; Legendary pity 40; odds shown in UI from the same config.
+- Traits: 8 traits; class match 22.2%, others 11.1% (12.5% if no class match); pick on the 3rd roll per unit; resets on later rerolls; Contagious max 1 per team including bench.
+- Crafting: recipes in config; one prestigious item per unit enforced on equip.
+
+### 18.10 Monetization and policy
+- Developer products (gem packs) via MarketplaceService receipt processing; idempotent (store receipt IDs in the profile).
+- Check PolicyService for regions where paid random items are restricted; block paid summons there. [Unverified] exact rules.
+- Game description carries an "inspired content" disclaimer (as ALS does).
+
+### 18.11 UI and quality of life
+- Free 2x/3x speed, autoplay toggle, colorblind mode, UI scale, K/M/B number formatting.
+- Tutorial stage per mechanic (placement, recall, bench, tiredness, traits).
+
+### 18.12 Telemetry
+- Log per run: units/traits/equipment used, mode, result, floor/round reached. Feeds the pick-rate review and the raid/heist payout tuning. (AnalyticsService custom events or own logging; [Unverified].)
+
+### 18.13 Build order (milestones)
+| # | Milestone | Done when |
+|---|---|---|
+| M0 | Repo setup: Rojo projects, folders, lint, tests running | Empty lobby + match places build from the repo |
+| M1 | Config tables + data layer (profile, session lock, schema) | Data saves/loads; no dupes across rejoin |
+| M2 | Combat sim core (grid, timers, targeting/taunt, damage, death, tiredness) | Tests pass for a 5v5 group fight |
+| M3 | Match flow (groups, recall, bench, healing, cash, upgrades, win/lose) | A full ~25-enemy round plays on the server |
+| M4 | Client view (placement UI, animations from events, bars, numbers) | Playable in Studio end to end |
+| M5 | Passives, traits, statuses, equipment modifiers | All 29 kits work in tests |
+| M6 | Abilities, autocast toggle, autoplay | Autoplay clears early story, struggles on hard stages |
+| M7 | Gacha, pity, inventory, trait rolls, crafting | Summon/craft/roll loops work with saved data |
+| M8 | Modes: story, challenges, raid, heists, Infinity Castle, Gauntlet, branching, shop | All modes playable |
+| M9 | Monetization, policy checks, tutorial, settings | Purchases safe; tutorial complete |
+| M10 | Playtest, telemetry, balance pass, launch prep | Ready to launch when the market window opens |
+
+### 18.14 Tech risks ([Inference])
+- DataStore limits and failures: retries, budgets, session locking.
+- Exploiters: never trust the client; rate-limit remotes.
+- Server cost: one reserved server per solo run is simple but means many small servers; acceptable on Roblox [Unverified].
+- Event stream size with big DoT/AoE fights: batch per tick.
+- Art is the long pole, not code: 29 R6 models + animations + VFX.
+
 ## 11. Open questions
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
 8. Raid payout (300 gems proposed) and clear length: set in testing.
-12. Tech plan for the build session (scripts, data, saving): later (User).
+12. Tech plan: drafted in section 18; review it.
 13. Content for the update after launch: TBD (User).
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
