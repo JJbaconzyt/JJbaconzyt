@@ -129,10 +129,10 @@ User decisions:
 | Mythic | Needed for top-end content |
 
 Power numbers (User):
-- No set rate per tier; each unit has its own base stats. Example: Common ~50 base DPS, Mythic ~375 base DPS.
+- No set rate per tier; each unit has its own base stats. Example given: Common ~50, Mythic ~375 base DPS; later raised for bigger gaps (see next line).
 - All Mythics around the same power level; a small hierarchy or niche units is fine.
 - No cap on combined rarity x trait x equipment. Enemies are balanced around units, not the other way around. "Monkey brain likes big number."
-- Proposal (in-between anchors): Rare ~100, Epic ~170, Legendary ~260 base DPS.
+- DPS ladder (User chose more gap, Mythic raised): Common ~50, Rare ~110, Epic ~220, Legendary ~420, Mythic ~800 base DPS. Roughly 2x per tier; individual units vary around these.
 
 [Inference] Risks: no cap plus ongoing powercreep inflates numbers over time (Balakay mentioned ALS reaching billions/trillions, and disliked Vanguards dividing everything by 10 to fix it). Plan number formatting (K/M/B) from day one. Balancing enemies around top units can leave weaker accounts behind; the heist/scaling floor helps.
 
@@ -289,7 +289,7 @@ Balance guardrails:
 - Numbers are placeholders; tune in playtest.
 
 ## 14. Mythic kits (approved by user)
-Rules: base DPS ~375 for all Mythics, small hierarchy allowed (Muzan strongest, per user). Most units should not have abilities (User); units without one get a 2nd passive. Proposal: only 4 Mythics keep an ability (Giyu, Muzan, Gojo, Sukuna); non-Mythic units get none. Numbers are placeholders. Canon references are from my knowledge, [Unverified].
+Rules: base DPS ~800 for all Mythics, small hierarchy allowed (Muzan strongest, per user). Most units should not have abilities (User); units without one get a 2nd passive. Proposal: only 4 Mythics keep an ability (Giyu, Muzan, Gojo, Sukuna); non-Mythic units get none. Numbers are placeholders. Canon references are from my knowledge, [Unverified].
 
 | Unit | Source | Class | User's role | SPA | Passive 1 | Passive 2 / Ability |
 |---|---|---|---|---|---|---|
@@ -311,14 +311,14 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 
 [Inference] Notes:
 - Mythic count is now 13 (6 Castle, 2 raid, 5 banner).
-- Gyomei (User pick, banner) is the only Mythic tank so far; more can come in updates. Tanks have high SPA, so his DPS should sit below ~375; his value is HP and taunt.
+- Gyomei (User pick, banner) is the only Mythic tank so far; more can come in updates. Tanks have high SPA, so his DPS should sit below ~800; his value is HP and taunt.
 - Sung Jin-woo is kept simple on purpose (Balakay's Vanguards criticism).
 - Zenitsu ignoring taunt on every 4th hit could be strong. Watch it.
 - Abilities are now rare, matching "exclusive and strong"; the 4 ability units become the hard-content picks.
 - Damage trait disables passives, so it costs Mythics more than filler units.
 
 ## 15. Non-Mythic kits (approved by user)
-Rules: passives only, no abilities. Commons have no passive (their role is the kit). Base DPS anchors: Common ~50, Rare ~100, Epic ~170, Legendary ~260. Canon references are from my knowledge, [Unverified].
+Rules: passives only, no abilities. Commons have no passive (their role is the kit). Base DPS anchors: Common ~50, Rare ~110, Epic ~220, Legendary ~420. Canon references are from my knowledge, [Unverified].
 Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji -> Sakura (gives an early heal medic). Chad added as the Epic tank (User asked for one).
 
 | Unit | Rarity | Class / type | Role | SPA | Passive |
@@ -348,7 +348,6 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
-2. DPS ladder: user wants more gap between rarities (pending: keep Mythic ~375 or raise it).
 3. Damage trait at 300% (flagged for rebalancing in section 6).
 5. Shop: potion/temporary equipment list and prices.
 6. Does a trait pick reset on a later reroll?
