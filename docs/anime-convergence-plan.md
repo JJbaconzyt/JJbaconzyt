@@ -1,5 +1,7 @@
 # Anime Convergence (Roblox auto battler) – Full Plan
 
+Read order for the build session: 1 (vision), 3 (combat/run rules), 4-6 (units, rarity, traits), 12 (launch content and economy), 13-16 (equipment, kits, names), 17 (setting), 18 (tech plan). Section 8 is brainstorm only; section 11 lists what is still open.
+
 Status: draft, planned in a cloud session; building will happen in a separate environment with Roblox tooling.
 Legend: "User:" = decision or wording from the user. [Inference] / [Speculation] / [Unverified] = my labels. "Proposal" = my idea, not approved.
 
@@ -22,7 +24,7 @@ Characters: existing anime IP. User accepts the risk. [Unverified] takedown/ban 
 | Complaint | Source video | Design response |
 |---|---|---|
 | 1-placement 250% trait makes other traits useless | Galaxies | Traits balanced as a hierarchy; class fit; pick-rate telemetry |
-| Gambling OK, broken 0.1% chase is the problem | Galaxies | Pity-based pulls; mythic-only traits with equal odds |
+| Gambling OK, broken 0.1% chase is the problem | Galaxies | Pity-based pulls; mythic-only traits, pick on 3rd roll, class-weighted odds |
 | Autoplay beat the whole game | Galaxies | Autoplay has upgrades but no abilities; abilities are strong and manual |
 | 2x gems/gold paywall = "greedy" | Galaxies | Free speed toggle, no paywalled income multipliers |
 | Samey unit passives | Galaxies | Passives matter on big units, kept simple |
@@ -120,7 +122,7 @@ Review flags ([Inference]):
 
 ## 4. Units
 - Roles (proposal): Shooter, Burst, Area, Wall, Support/Medic, Economy, Control.
-- Classes (User): each unit has a class that corresponds to a trait; matching class and trait makes the trait 20% stronger. Classes given: Speedster, Ranger, Controller, Specialist, Punisher, etc.
+- Classes (User): each unit has a class that corresponds to a trait; matching class and trait makes the trait 20% stronger. Final classes: Speedster, Specialist, Punisher, Medic, Economy, Balanced (Ranger and Controller were removed).
 - Passives (User): matter for big units; not "anime last stand" style with about 5 complex passives.
 - One trait per unit (User).
 - Medic (User): a unit, with several types (buff-oriented, pure heal, cleanser, etc.), so no single default medic. [Inference] With persistent damage, healing is close to mandatory, so medic types must have clear tradeoffs.
@@ -183,7 +185,7 @@ Review flags ([Inference]):
 - Duplicates convert to upgrade shards (small, capped); Commons also usable as evolve fodder.
 - Odds shown in the summon screen.
 
-## 8. Modes (brainstorm; proposals, not decided)
+## 8. Modes (brainstorm; proposals, not decided. Launch content is defined in section 12)
 User: unique game modes, traits, and units; challenges play into the "oddity" idea.
 
 - Infinity Castle (first update, Demon Slayer): endless floors up the map. Ideas: floor modifiers (one rule per floor), a boss every 10th floor, persistent damage across floors with limited recovery.
@@ -281,7 +283,7 @@ Launch strategy (User):
   - Raid gems (proposal): 300 gems per clear, plus the 35% capsule roll. Beats an Infinity Castle repeat (250). At ~5 min per clear: ~3.6k gems/hour (~14 pulls/hour), so Mythic pity (200 pulls) is ~14 hours of raid. Daily heist stays the best per-run payout.
   - Non-Mythic units (User): lesser-known characters from big anime; some may evolve into Mythics in later updates, giving them a future use. List below is my proposal (no Demon Slayer, since all Demon Slayer units are Mythic):
     - Current list and kits: see section 15.
-  - Total 11 Mythics; user is increasing Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
+  - Total 13 Mythics (6 Castle, 2 raid, 5 banner incl. Tsunade and Gyomei); user increased Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
 
 Flags ([Inference]):
 - Mythic count rising (11+) while Common-Legendary are "filler" (User). Filler cut to 16 non-Mythics (User decision, counts proposed). [Inference] Give them a lasting job (evolve fodder, equipment materials).
