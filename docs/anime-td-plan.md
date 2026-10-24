@@ -387,39 +387,39 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 [Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps (no Legendary tank, no Epic/Legendary medic, Economy only at Common) are accepted (User): lower-rarity units get replaced, so not every role needs every rarity. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
 ## 16. In-game names (User: altered but recognizable; names are my proposal)
-Kit tables above use the real names for clarity; the game uses these. They avoid copying competitors' parody names (Zuffy, Vogita, Song Jinwu, etc.). Revised to be more altered (User): mostly blends of the real name with a nickname, power, or surname (e.g. Rubby = rubber + Luffy, Kibuzan = Kibutsuji Muzan).
+Kit tables above use the real names for clarity; the game uses these. They avoid copying competitors' parody names (Zuffy, Vogita, Song Jinwu, etc.). Final approach (User): the first set of light changes, plus one more letter swapped or added (e.g. Ruffy -> Ruffey, Muzen -> Muuzen).
 
 | Character | In-game name | Rarity |
 |---|---|---|
-| Zenitsu | Jenitsu | Mythic |
-| Inosuke | Boarsuke | Mythic |
-| Giyu | Kiyu | Mythic |
-| Douma | Frouma | Mythic |
-| Kokushibo | Moonshibo | Mythic |
-| Muzan | Kibuzan | Mythic |
-| Gojo | Satojo | Mythic |
-| Sukuna | Ryosuku | Mythic |
-| Sung Jin-woo | Shung Jinho | Mythic |
-| Luffy | Rubby | Mythic |
-| Goku | Kakoto | Mythic |
-| Tsunade | Senjude | Mythic |
-| Gyomei | Himegyo | Mythic |
-| Nami | Nima | Common |
-| Yamcha | Yamuchi | Common |
-| Ino | Yamino | Common |
-| Mineta | Grapeta | Common |
-| Rock Lee | Stone Lee | Rare |
-| Nobara | Nailbara | Rare |
-| Kirishima | Hardshima | Rare |
-| Sakura | Harusaku | Rare |
-| Todo | Aoido | Epic |
-| Shikamaru | Shadomaru | Epic |
-| Kurapika | Chainpika | Epic |
-| Power | Pawa | Epic |
-| Chad | Yasutoro | Epic |
-| Byakuya | Senbyaku | Legendary |
-| Hawks | Falkz | Legendary |
-| Killua | Kiluwatt | Legendary |
+| Zenitsu | Zennitzu | Mythic |
+| Inosuke | Inozuka | Mythic |
+| Giyu | Ghiyo | Mythic |
+| Douma | Doomah | Mythic |
+| Kokushibo | Kokkushiba | Mythic |
+| Muzan | Muuzen | Mythic |
+| Gojo | Gojju | Mythic |
+| Sukuna | Sukanno | Mythic |
+| Sung Jin-woo | Sung Jhinu | Mythic |
+| Luffy | Ruffey | Mythic |
+| Goku | Gokko | Mythic |
+| Tsunade | Tzunada | Mythic |
+| Gyomei | Gyommay | Mythic |
+| Nami | Nammy | Common |
+| Yamcha | Yamchuu | Common |
+| Ino | Inah | Common |
+| Mineta | Minnetta | Common |
+| Rock Lee | Rokk Li | Rare |
+| Nobara | Noburra | Rare |
+| Kirishima | Kirrishimo | Rare |
+| Sakura | Sakkra | Rare |
+| Todo | Taddo | Epic |
+| Shikamaru | Shikkamaro | Epic |
+| Kurapika | Kurrapica | Epic |
+| Power | Powah | Epic |
+| Chad | Chaddo | Epic |
+| Byakuya | Byakkuyo | Legendary |
+| Hawks | Hawkze | Legendary |
+| Killua | Kiluah | Legendary |
 
 [Inference] Altered names lower takedown risk but do not remove it; models stay recognizable. ALS also carries an "inspired content" disclaimer in its game description; do the same.
 
