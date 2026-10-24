@@ -190,7 +190,7 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 | 2 | MVP: one map (~25 enemies), 6 units including a medic, traits, autoplay and ability toggle, tutorial, summon with pity, save data |
 | 3 | Closed playtest + pick-rate telemetry; tune balance and the multiplier cap |
 | 4 | Launch (heavy, see 12): story, challenges, raid, daily/weekly heist, Infinity Castle with Demon Slayer units |
-| 5 | Update 1: content open |
+| 5 | Update 1 drops with release (User), i.e. launch = update 1 (Demon Slayer + Infinity Castle) |
 | 6 | Cadence: small frequent updates, one rebalance patch per quarter |
 
 Update principle: no single unit absorbs months of dev time.
@@ -217,6 +217,10 @@ Launch strategy (User):
 - Trait rolls: challenges 1-3% drop, daily heist 10%, weekly heist guaranteed, plus codes. Still 5 rolls per unit, then pick.
 - Equipment: more customization; buffs stack on top of traits; crafted from story/raid/challenge resources. Prestigious equipment locked behind weekly heist; higher rounds give better chance.
 - No stat rerolls.
+- Weekly heist: same as daily heist, higher loot, resets weekly.
+- Equipment slots: 3 (helmet, chest plate, weapon).
+- Raid: 35% chance for 1-3 capsules. Capsules contain all currencies except trait rolls (materials count as currency); 10% chance for units.
+- Infinity Castle: 2500 gems per floor, or a 10-summon (same value at 250/pull).
 
 Flags ([Inference]):
 - 10 of 35 units are Mythic: top-heavy pool.
@@ -224,6 +228,7 @@ Flags ([Inference]):
 - Infinity Castle self-caps by difficulty, so gem inflation is limited; top players still earn most.
 - Floor 100 Muzan is a top-player skill chase; Balakay liked hard unlock stages over long grinds.
 - Prestigious gear behind high weekly rounds: rich-get-richer.
+- Infinity Castle at 2500/floor: floor 20 = 50k gems (200 pulls), floor 100 = 250k (1000 pulls), vs ~4-5k/day from heist. If floors are repeatable, Infinity Castle is the only gem source that matters. Recommend first-clear only (question 25).
 - 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
 
 ## 11. Open questions
@@ -248,8 +253,8 @@ Flags ([Inference]):
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
 20. Does the bench count toward "5 rolls per unit" or team limits for Contagious (1 per team)?
-22. Weekly heist rules.
-23. Equipment slots and item list.
-24. Raid capsule odds.
-25. Infinity Castle gems per floor.
-26. Update 1 content.
+22. Weekly heist: resolved.
+23. Equipment: item list and stats (slots resolved).
+24. Raid: resolved.
+25. Infinity Castle: 2500 gems per floor first clear only, or repeatable?
+26. Update 1: ships with release; next update content open.
