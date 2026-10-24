@@ -92,7 +92,8 @@ User decisions:
   - No stacking traits (User; one trait per unit).
   - Boss wave (User): boss + 4 DPS, no tank, no healer.
   - Anti-heal debuff exists for both sides and blocks lifesteal (User).
-  - [Inference] All-targets trait: vs 5 enemies, 0.7 x 5 = 3.5x total damage, close to the Damage trait's 4x single target, and boss waves still have 5 enemies (boss + 4 DPS). It also ignores taunt (AoE passes tanks). Risk: it becomes the default trait. Consider applying the 30% nerf per extra target or capping targets.
+  - [Inference] All-targets trait at 50%: vs 5 enemies, 0.5 x 5 = 2.5x total damage, below the Damage trait's 4x single target. It still passes tanks (AoE). Playtest.
+  - [Inference] Three classless traits (Damage, All-targets, Control) get no 20% class bonus for anyone; the class system now covers fewer traits.
 - Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." Confirmed (User: "Slower"): SPA x (1 + bar/2), so 100% tired = 1.5x SPA. Skip-turn plus SPA nerf at 75%+ stacks on purpose (User).
 - No extra tiredness reduction for low-SPA / SPA-trait units (User): they tire faster, but a multiplier on a low SPA is a smaller absolute nerf, which compensates.
 
@@ -108,7 +109,7 @@ Review flags ([Inference]):
 - Passives (User): matter for big units; not "anime last stand" style with about 5 complex passives.
 - One trait per unit (User).
 - Medic (User): a unit, with several types (buff-oriented, pure heal, cleanser, etc.), so no single default medic. [Inference] With persistent damage, healing is close to mandatory, so medic types must have clear tradeoffs.
-- Class-to-trait map (User): Punisher→Lifesteal, Controller→new all-targets trait, Ranger class removed, Damage trait is classless ("such a high buff"). Rest is proposal: Control trait→? (lost Controller), Speedster→SPA, Specialist→Contagious, Economy→Farm, Balanced→All rounder.
+- Class-to-trait map (User): Punisher→Lifesteal. Ranger and Controller classes removed. Classless traits: Damage ("such a high buff"), All-targets, Control. Medic is a class with no trait bonus. Rest is proposal: Speedster→SPA, Specialist→Contagious, Economy→Farm, Balanced→All rounder.
 
 ## 5. Rarity and powercreep
 User decisions:
@@ -139,7 +140,7 @@ User: only mythic traits, equal odds; select the trait after 5 rolls per unit. R
 |---|---|
 | Farm | 30% money applies only to units whose sole purpose is to generate income. Per-wave cash is a set number. Kills made by the unit with the Farm trait give double cash. Doubling applies only when a unit that does not generate cash has the trait and is on the field killing |
 | Lifesteal (replaces Range, User) | 20% of damage dealt is returned as health; blocked by anti-heal (User) |
-| New Controller trait (User; name open) | 30% damage nerf; every attack hits all targets |
+| All-targets trait (User; name open; classless) | 50% damage nerf (was 30%); every attack hits all targets |
 | Damage | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (attacks twice as often) |
 | Control | "each hit applies random debuff effect"; bosses resist |
@@ -210,7 +211,7 @@ Update principle: no single unit absorbs months of dev time.
 14. Infinity Castle "expansion": what is the twist?
 15. Bench: resolved (2 reserve).
 16. Tiredness: resolved.
-21. Taunt rule: resolved. Open: name for the Controller all-targets trait; which class (if any) gets the Control trait now; anti-heal strength and duration.
+21. Taunt rule: resolved. Open: name for the all-targets trait; anti-heal strength and duration; final class list (Speedster, Specialist, Punisher, Medic, Tank?, Economy?).
 17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
