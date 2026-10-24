@@ -309,11 +309,13 @@ Rules: base DPS ~375 for all Mythics, small hierarchy allowed (Muzan strongest, 
 | Luffy | Banner | Speedster | Brawler (proposal) | Fast | Gum-Gum Barrage: every 3rd attack hits 3 times | Passive, Gear 5: first time HP drops below 50% in a run, attacks hit all enemies and are debuff immune for 2 turns |
 | Goku | Banner | Punisher | Burst damage (proposal) | Medium | Saiyan Rage: +5% damage each time he is hit (max +50%, resets on recall) | Passive, Kamehameha: every 5th attack is a line hit for 3x damage |
 | Tsunade (new) | Banner | Medic (heal-type) | Mythic healer (proposal) | Medium | Medical Ninjutsu: heals the lowest-HP ally each turn | Passive, Strength of a Hundred: once per group, an ally dropping below 30% HP is healed 30% |
+| Gyomei (new) | Banner | Balanced, Tank type | Mythic tank (User) | Slow | Stone Body: takes 20% less damage | Passive, Prayer: each hit he takes gives adjacent allies +5% damage (max +25%, resets each group) |
 
 Changes from the first draft (User feedback): Gojo is no longer a medic (no canonical healing besides reverse cursed technique), Luffy is not a tank, most units have no ability: only Giyu, Muzan, Gojo, Sukuna keep one, Tsunade added as the Mythic healer (she is Naruto's best-known medical ninja).
 
 [Inference] Notes:
-- Mythic count is now 12 (6 Castle, 2 raid, 4 banner).
+- Mythic count is now 13 (6 Castle, 2 raid, 5 banner).
+- Gyomei (User pick, banner) is the only Mythic tank so far; more can come in updates. Tanks have high SPA, so his DPS should sit below ~375; his value is HP and taunt.
 - Sung Jin-woo is kept simple on purpose (Balakay's Vanguards criticism).
 - Zenitsu ignoring taunt on every 4th hit could be strong. Watch it.
 - Abilities are now rare, matching "exclusive and strong"; the 4 ability units become the hard-content picks.
