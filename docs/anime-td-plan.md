@@ -200,7 +200,19 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 ## 9b. Art style (User)
 - Blocky Roblox characters, semi-high quality. Target: Anime Last Stand level. Not Anime Vanguards level (too high quality for what is needed).
 - [Inference] Supports the Vanguards feedback: commenters called the high-poly Sung Jin-woo model uncanny in Roblox.
-- References: Anime Last Stand on Roblox (https://www.roblox.com/games/12886143095/Anime-Last-Stand) and its fan wiki (https://alsroblox.fandom.com/wiki/Units). I could not load images: this cloud session's network policy blocks roblox.com and the wiki image host. Collect reference screenshots in the build session or allow those domains.
+- References: Anime Last Stand on Roblox (https://www.roblox.com/games/12886143095/Anime-Last-Stand) and its fan wiki (https://alsroblox.fandom.com/wiki/Units).
+- ALS game thumbnails (Roblox thumbnails API, viewed 2026-10-24):
+  - https://tr.rbxcdn.com/180DAY-a2d20bf051ff960d44f7805f9e029890/768/432/Image/Png/noFilter
+  - https://tr.rbxcdn.com/180DAY-d8eb9578cfac15acb64f0becc1c201b3/768/432/Image/Png/noFilter
+  - https://tr.rbxcdn.com/180DAY-e7f6ccfca8c0a789f9b351a6b9251767/768/432/Image/Png/noFilter
+  - https://tr.rbxcdn.com/180DAY-30f013a8379e2b1f7a53002ed2a98dab/768/432/Image/Png/noFilter
+- What the thumbnails show (my reading; these are marketing art, so in-game models are likely simpler):
+  - Blocky Roblox bodies with custom anime hair, accessories, and hand-drawn anime faces (expressive eyes, gritted teeth).
+  - Very saturated colors, heavy glow, particles, and energy effects.
+  - Bold chrome/gradient logo text with outlines.
+  - Layout: square art centered on a blurred, enlarged copy of itself.
+  - Two of four look painted/illustrated rather than rendered.
+- Not checked: ALS in-game model screenshots (the wiki blocks automated requests).
 
 ## 9. Monetization
 - Free: 2x/3x speed, autoplay, UI options (colorblind mode, UI size).
@@ -223,7 +235,8 @@ Update principle: no single unit absorbs months of dev time.
 
 Launch strategy (User):
 - Heavy launch, since the project is vibecoded (AI-assisted).
-- Timing: not now; user says Anime Adventures is coming back ([Unverified]; a recent Anime Adventures "Update 21" video title was seen in related videos, not confirmed). Best window: after competitors ship several flop updates or during a content drought.
+- Market snapshot (live player counts, Roblox search/games API, 2026-10-24, one moment in time): Vanguards ~31.9k, Anime Adventures ~29.5k, Anime Expeditions ~1.5k, Anime Origins ~640, Anime Frontier ~540, Anime Galaxies ~470, Anime Last Stand 43, Re:Rangers X 24. [Inference] Two games hold most players; recent releases sit in the hundreds. ALS's art is the target, but the game itself has fallen off. ALS data: 1.08B visits, R6 avatars, not officially licensed, carries an "inspired content" disclaimer (precedent for the IP approach).
+- Timing: not now; user says Anime Adventures is coming back (supported by the snapshot: ~29.5k live players). Best window: after competitors ship several flop updates or during a content drought.
 
 [Inference] Risks:
 - AI speeds up code, not balance testing, art, animation, Roblox data-save bugs, or playtesting. Bigger scope = more bugs at launch.
