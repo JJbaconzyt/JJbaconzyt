@@ -34,21 +34,23 @@ Open decision: characters. User wants existing anime IP. [Unverified] this risks
 - Control: slow, stun, push back.
 - Lane-swapper: moves enemies between lanes.
 
-### 3.2 Rarity (power band stays tight)
-| Rarity | Role of rarity | Rule |
-|---|---|---|
-| Common | Core roles, cheap | Always viable late game |
-| Rare | Specialized twist | Sidegrade only |
-| Epic | Unique mechanic | Strong in niche, weak outside |
-| Mythic | Build-defining mechanic | Not higher raw DPS than best Common in same role |
+### 3.2 Rarity (USER DECISION: visible power gaps between tiers)
+User: "There should be seen gaps between the rarities, because if a common can technically beat the game, why would anyone go for a mythic."
 
-Rule: no rarity has strictly higher stats than a lower one in the same role. Rarer = more interesting, not just bigger numbers.
+| Rarity | Intent |
+|---|---|
+| Common | Clears early/Normal content; falls off in Hard+ |
+| Rare | Clears Normal; viable early Hard |
+| Epic | Clears Hard |
+| Mythic | Needed for top-end content (Nightmare, endless depth) |
+
+Guardrails (my proposal, [Inference] from Balakay's powercreep complaint): gaps are fixed at launch and written down as multipliers; new units slot into existing tiers instead of creating a new top tier; old units get buffed in rebalance patches. Gap size is still an open number (see 7).
 
 ### 3.3 Balance rules
 1. Pick-rate telemetry per unit per mode. Any unit >40% of top-tier clears gets reviewed. (Threshold is a starting guess.)
 2. Every unit gets one clear weakness (cost, range, cooldown, vulnerability).
 3. Numbers frozen: HP and damage scale bands set before launch; new content may not widen them.
-4. Traits: if added, only small modifiers, never multiplicative with placement count.
+4. Traits: see 3.5. Goal (user): a hierarchy of traits, but no default trait that nearly every unit runs.
 5. New unit ships with a counter-enemy or counter-stage so it is not strictly best.
 6. Quarterly rebalance patch buffs old units before adding new ones.
 
@@ -58,7 +60,25 @@ Rule: no rarity has strictly higher stats than a lower one in the same role. Rar
 - Rate-up banner rotates, carrying 1 featured unit; featured unit never power-creeps.
 - Duplicates convert to upgrade shards (small, capped bonus).
 - Odds shown in the summon screen.
-- Not included: trait gambling, 0.1% do-it-all outcomes.
+- Traits are in the game (user decision), see 3.5.
+
+### 3.5 Traits (user's draft, wording kept as given)
+Goal (user): "to have a hierarchy of traits, but to not have one that is the default and practically every unit runs it."
+
+| Trait | User's definition |
+|---|---|
+| Farm | "30% money on farm unit; double cash/wave and cash killed by the unit on dps" |
+| Range | "Unit gains whole map range, and will target the closest enemy. Force single target only" |
+| Damage (rarest) | "300% damage boost, no passives allowed" |
+| SPA | "Cuts SPA in half, nerfs all other stats by 20%" |
+| Control | "each hit applies random debuff effect" |
+| Contagious (biggest, 1/team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%" |
+| All rounder | "buff all stats by 20%" |
+
+Review flags (see chat/section 7 for questions):
+- Damage trait: 300% for the rarest roll looks like Balakay's "250% one-placement trait" complaint. [Inference] If most units have weak passives, losing them costs little and it becomes the default.
+- Range trait: whole-map range conflicts with lane identity unless "closest" is defined (closest to unit, to base, or in own lane).
+- Ambiguous wording: Farm second half, SPA with All rounder, Contagious "10% damage" base.
 
 ## 4. Enemies + stages
 
@@ -110,3 +130,11 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 3. Solo vs co-op lanes.
 4. Art style and setting.
 5. Exact pity numbers and odds.
+6. Rarity gap size (e.g. multiplier per tier) and which content needs which tier.
+7. Traits: one per unit? How are they obtained (roll, pity, odds per trait)?
+8. Farm trait: exact meaning of "double cash/wave and cash killed by the unit on dps".
+9. Range trait: "closest" measured from what; does it ignore lanes?
+10. SPA: does "SPA cut in half" mean attacks twice as often? Does All rounder shorten SPA?
+11. Contagious: is "10% damage" 10% of the hit, of enemy max HP, or current HP? Does it chain? Boss immunity?
+12. Control: debuff pool, boss immunity, proc limits for fast attackers.
+13. Do rarity multipliers and trait multipliers stack multiplicatively?
