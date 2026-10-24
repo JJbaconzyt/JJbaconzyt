@@ -292,7 +292,7 @@ Balance guardrails:
 - Advanced/Prestigious = stronger numbers on the same tradeoff shape, not strictly better.
 - Numbers are placeholders; tune in playtest.
 
-## 14. Mythic kits (proposal; roles for Infinity Castle and raid units from user)
+## 14. Mythic kits (approved by user)
 Rules: base DPS ~375 for all Mythics, small hierarchy allowed (Muzan strongest, per user). Most units should not have abilities (User); units without one get a 2nd passive. Proposal: only 4 Mythics keep an ability (Giyu, Muzan, Gojo, Sukuna); non-Mythic units get none. Numbers are placeholders. Canon references are from my knowledge, [Unverified].
 
 | Unit | Source | Class | User's role | SPA | Passive 1 | Passive 2 / Ability |
@@ -347,4 +347,4 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
 27. Equipment: resolved (approved; one prestigious per unit). Numbers tuned in playtest.
-28. Mythic kits: approve or change section 14 (revised: Tsunade added, Gojo/Luffy reclassed, abilities only on Giyu, Muzan, Gojo, Sukuna).
+28. Mythic kits: resolved (approved). Numbers tuned in playtest.
