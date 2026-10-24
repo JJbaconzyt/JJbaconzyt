@@ -157,7 +157,7 @@ Review flags ([Inference]):
 
 ## 7. Gacha
 - Gems earnable free (stage clears, daily, challenges); optional paid packs.
-- Unit pity: guaranteed Epic+ by pull N, Mythic by pull M (starting guess 30 / 90; tune after tests).
+- Unit pity: Mythic at 200 pulls, Mythic rate 1% (User). Lower-tier pity open.
 - Rate-up banner rotates, carrying one featured unit.
 - Duplicates convert to upgrade shards (small, capped); Commons also usable as evolve fodder.
 - Odds shown in the summon screen.
@@ -220,7 +220,8 @@ Launch strategy (User):
 - Weekly heist: same as daily heist, higher loot, resets weekly.
 - Equipment slots: 3 (helmet, chest plate, weapon).
 - Raid: 35% chance for 1-3 capsules. Capsules contain all currencies except trait rolls (materials count as currency); 10% chance for units.
-- Infinity Castle: 2500 gems per floor, or a 10-summon (same value at 250/pull).
+- Infinity Castle: 1250 gems per floor on first clear (changed from 2500); repeats give 1/5 (250 gems = 1 pull).
+- Gacha (User): Mythic rate 1%, Mythic pity 200 pulls (50k gems).
 
 Flags ([Inference]):
 - 10 of 35 units are Mythic: top-heavy pool.
@@ -228,7 +229,8 @@ Flags ([Inference]):
 - Infinity Castle self-caps by difficulty, so gem inflation is limited; top players still earn most.
 - Floor 100 Muzan is a top-player skill chase; Balakay liked hard unlock stages over long grinds.
 - Prestigious gear behind high weekly rounds: rich-get-richer.
-- Infinity Castle at 2500/floor: floor 20 = 50k gems (200 pulls), floor 100 = 250k (1000 pulls), vs ~4-5k/day from heist. If floors are repeatable, Infinity Castle is the only gem source that matters. Recommend first-clear only (question 25).
+- Infinity Castle at 1250/floor: floor 20 = 25k (100 pulls), floor 100 = 125k (500 pulls = 2.5 Mythic pities). Repeats at 250/floor: if a floor takes ~5 min, that is ~12 pulls/hour, close to a full day of heist (16-20 pulls). Repeat farming may outpace heist; depends on floor length.
+- 1% Mythic rate: about 13% of players reach the 200 pity without a Mythic (0.99^200). Pity = ~10-12 days of heist income.
 - 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
 
 ## 11. Open questions
@@ -256,5 +258,5 @@ Flags ([Inference]):
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
-25. Infinity Castle: 2500 gems per floor first clear only, or repeatable?
+25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: floor length; which Mythics are gacha vs Infinity Castle only.
 26. Update 1: ships with release; next update content open.
