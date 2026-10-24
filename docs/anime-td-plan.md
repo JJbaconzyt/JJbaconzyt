@@ -83,13 +83,16 @@ User decisions:
 | Upgrade | -5% |
 | Sitting out | -40% per round |
 
-- Taking damage is per hit (User). Tanks have natural tiredness resistance (User; amount open).
-- Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." [Inference] Read as SPA x (1 + bar/2), so 100% tired = 1.5x SPA (slower). A literal SPA x (bar/2) would make low tiredness a speed buff (e.g. 20% bar = SPA x 0.1), so that reading is assumed wrong; confirm.
+- Taking damage is per hit (User). Tanks have 30% natural tiredness resistance (User).
+- Taunt rule (User): tanks must be killed before any other unit can be attacked, for both sides.
+  - [Inference] Range trait (global, targets highest current HP) conflicts with taunt: does it bypass tanks? (question 21)
+  - [Inference] Open: AoE/splash onto non-tanks while a tank lives? Multiple tanks, which first? Is a boss a tank?
+  - [Inference] Medic + tank behind taunt can stall fights; enemy squads need answers (anti-heal, armor pierce).
+- Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." Confirmed (User: "Slower"): SPA x (1 + bar/2), so 100% tired = 1.5x SPA. Skip-turn plus SPA nerf at 75%+ stacks on purpose (User).
 - No extra tiredness reduction for low-SPA / SPA-trait units (User): they tire faster, but a multiplier on a low SPA is a smaller absolute nerf, which compensates.
 
 Review flags ([Inference]):
 - +7.5% per hit: handled for tanks by natural resistance; other units hit often (melee) still tire fast.
-- At 75%+ the skip-turn and the SPA multiplier stack (double penalty). Maybe intended.
 - Recall happens after every group, so -10% is a guaranteed reset each group; the real tiredness budget is per group.
 - Effect at 100% tired is undefined (how much SPA nerf, any other penalty).
 - Many systems (HP, bench, tiredness, shop) need tutorials and autoplay logic for each.
@@ -200,7 +203,8 @@ Update principle: no single unit absorbs months of dev time.
 13. Which of the section 8 modes are in the first release.
 14. Infinity Castle "expansion": what is the twist?
 15. Bench: resolved (2 reserve).
-16. Tiredness: confirm SPA formula reading SPA x (1 + bar/2); tank resistance amount.
+16. Tiredness: resolved.
+21. Taunt rule: does Range bypass tanks; AoE onto non-tanks; order with multiple tanks; are bosses tanks?
 17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
