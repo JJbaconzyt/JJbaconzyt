@@ -321,6 +321,32 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 - Abilities are now rare, matching "exclusive and strong"; the 4 ability units become the hard-content picks.
 - Damage trait disables passives, so it costs Mythics more than filler units.
 
+## 15. Non-Mythic kits (proposal)
+Rules: passives only, no abilities. Commons have no passive (their role is the kit). Base DPS anchors: Common ~50, Rare ~100, Epic ~170, Legendary ~260. Canon references are from my knowledge, [Unverified].
+Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji -> Sakura (gives an early heal medic).
+
+| Unit | Rarity | Class / type | Role | SPA | Passive |
+|---|---|---|---|---|---|
+| Nami (One Piece) | Common | Economy | Income | - | None (generates cash each round) |
+| Yamcha (Dragon Ball) | Common | Punisher | Single-target DPS | Medium | None |
+| Ino (Naruto) | Common | Medic (heal) | Small heals | Medium | None (heals lowest-HP ally) |
+| Mineta (My Hero Academia) | Common | Specialist | Slow | Medium | None (attacks slow by 10%) |
+| Rock Lee (Naruto) | Rare | Speedster | Fast DPS | Fast | Gates: -5% SPA per attack, max 5 stacks, resets on recall |
+| Nobara (Jujutsu Kaisen) | Rare | Specialist | DoT | Medium | Resonance: hits apply a small DoT for 2 turns |
+| Kirishima (My Hero Academia) | Rare | Balanced, Tank type | Early tank | Slow | Hardening: takes 15% less damage |
+| Sakura (Naruto) | Rare | Medic (heal) | Heals | Medium | Healing Palm: heals +20% on allies under 50% HP |
+| Todo (Jujutsu Kaisen) | Epic | Balanced | Support | Medium | Brotherhood: adjacent allies +15% damage |
+| Shikamaru (Naruto) | Epic | Specialist | Control | Medium | Shadow Bind: every 4th attack makes the target skip a turn (bosses immune) |
+| Kurapika (Hunter x Hunter) | Epic | Punisher | Boss damage | Medium | Chain Jail: +40% damage to bosses |
+| Power (Chainsaw Man) | Epic | Punisher | Bruiser | Medium | Blood Fiend: +20% damage while below 50% HP |
+| Byakuya (Bleach) | Legendary | Balanced | AoE | Slow | Senbonzakura: attacks also hit all other enemies for 30% |
+| Hawks (My Hero Academia) | Legendary | Speedster | Fast multi-hit | Fast | Feathers: each attack also hits a random enemy for 25% |
+| Killua (Hunter x Hunter) | Legendary | Speedster | Fast control | Fast | Lightning: 15% chance to stun on hit (bosses immune) |
+
+Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
+
+[Inference] Gaps: no Epic or Legendary tank or medic; Economy only at Common. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
+
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
 2. Team size and art pipeline (Roblox-style models vs high-poly).
@@ -350,3 +376,4 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 26. Update 1: ships with release; next update content open.
 27. Equipment: resolved (approved; one prestigious per unit). Numbers tuned in playtest.
 28. Mythic kits: resolved (approved). Numbers tuned in playtest.
+29. Non-Mythic kits: approve section 15 (incl. Usopp->Nami, Renji->Sakura swaps).
