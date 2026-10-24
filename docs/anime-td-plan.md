@@ -64,7 +64,7 @@ User decisions:
 ### 3.4 Economy
 - Per-wave cash is a set number (about 1000 as a starting guess, User).
 - Team stays fixed (no unit shop), but a shop exists for temporary equipment/potions bought with in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
-- Shop uses in-run cash only (User). Cash also buys unit upgrades (User). Whether autoplay uses the shop: open.
+- Shop uses in-run cash only (User). Cash also buys unit upgrades (User). Autoplay does not use the shop (User).
 
 ### 3.5 Health, bench, tiredness (User)
 - Bench: 2 units in reserve (5 on field + 2 reserve).
@@ -81,13 +81,15 @@ User decisions:
 | Taking damage | +7.5% |
 | Recall | -10% |
 | Upgrade | -5% |
-| Sitting out | lowers bar (amount open) |
+| Sitting out | -40% per round |
 
-- User floated "Maybe a reduction on top of it?" for SPA-trait units, which move more and tire faster. Read as: SPA-trait units gain less tiredness; confirm (question 16).
+- Taking damage is per hit (User). Tanks have natural tiredness resistance (User; amount open).
+- Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." [Inference] Read as SPA x (1 + bar/2), so 100% tired = 1.5x SPA (slower). A literal SPA x (bar/2) would make low tiredness a speed buff (e.g. 20% bar = SPA x 0.1), so that reading is assumed wrong; confirm.
+- No extra tiredness reduction for low-SPA / SPA-trait units (User): they tire faster, but a multiplier on a low SPA is a smaller absolute nerf, which compensates.
 
 Review flags ([Inference]):
-- +7.5% per damage instance: a unit hit ~13 times is fully tired. Tanks/walls exist to be hit, so they tire fastest. Consider scaling by damage taken (% of max HP) or capping per round.
-- Fast units (low SPA) move more, so +3% per move punishes speed. Maybe intended; balance with SPA trait reduction.
+- +7.5% per hit: handled for tanks by natural resistance; other units hit often (melee) still tire fast.
+- At 75%+ the skip-turn and the SPA multiplier stack (double penalty). Maybe intended.
 - Recall happens after every group, so -10% is a guaranteed reset each group; the real tiredness budget is per group.
 - Effect at 100% tired is undefined (how much SPA nerf, any other penalty).
 - Many systems (HP, bench, tiredness, shop) need tutorials and autoplay logic for each.
@@ -159,7 +161,8 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 - Ghost duels: fight another player's saved team asynchronously, no live PvP netcode needed.
 - Raid boss: a large boss fight with abilities mattering most.
 - Gauntlet (User: a difficulty level): no shop, no heals, 1.5x tiredness, 250% luck boost on all drops in the stage.
-  - [Inference] If Gauntlet is the best place for drops, top players will farm only Gauntlet; other difficulties may feel pointless for loot. Unclear if "250% luck" means 2.5x or 3.5x.
+  - 250% luck = 2.5x (User). User: Gauntlet is "practically unmatchable", requires really good units, and that is fair.
+  - [Inference] Only top teams can farm 2.5x drops, so the strongest players get stronger faster (rich-get-richer); watch the gap in playtest.
 - Counter pick: enemy composition reacts to the class you used most.
 
 ## 9. Monetization
@@ -197,8 +200,8 @@ Update principle: no single unit absorbs months of dev time.
 13. Which of the section 8 modes are in the first release.
 14. Infinity Castle "expansion": what is the twist?
 15. Bench: resolved (2 reserve).
-16. Tiredness: amount removed by sitting out; effect at 100%; does the SPA trait get reduced tiredness gain; is damage-taken per hit or scaled?
-17. Gauntlet: resolved (see section 8); clarify 250% luck = 2.5x or 3.5x.
+16. Tiredness: confirm SPA formula reading SPA x (1 + bar/2); tank resistance amount.
+17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
-19. Does autoplay use the shop?
+19. Autoplay and shop: resolved (autoplay does not use the shop).
 20. Does the bench count toward "5 rolls per unit" or team limits for Contagious (1 per team)?
