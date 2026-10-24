@@ -72,7 +72,7 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 
 | Trait | Definition |
 |---|---|
-| Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would. User clarification: "Doubling effect only applies when a unit that doesn't generate cash has the trait and is on the field killing when applicable" |
+| Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would. User clarification: "Doubling effect only applies when a unit that doesn't generate cash has the trait and is on the field killing when applicable". Final (User): per-wave cash is a set number; kills made by the unit with the Farm trait give double cash |
 | Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User) |
 | Damage (rarest) | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (User confirmed: attacks twice as often) |
@@ -80,10 +80,10 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 | Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
 | All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
 
-Obtaining traits (User): through story, codes, and challenges. Codes give rerolls. Trait rerolls are "hella rare", but a reroll path guarantees a mythic ("Maybe trait rerolls are hella rare, but you're guaranteed to get a mythic?" - User, phrased as a proposal).
-- [Inference] This resembles Anime Galaxies' "500 rerolls guarantees any mythic trait" which Balakay criticized. His stated problem: one trait is so good the guarantee just hands everyone the same trait. Whether the guarantee is a random mythic or a chosen one decides if this repeats it (question 14).
-- [Inference] Codes are widely shared, so keep reroll amounts per code small.
-- [Inference] Rarest trait (Damage) should not be the default mythic outcome; weight or gate it.
+Obtaining traits (User): through story, codes, and challenges. Trait rerolls are "hella rare", with a guaranteed mythic (User clarified: a random mythic, not a chosen one). Codes give 1-2 rerolls, restricted to updates.
+- [Inference] A random guaranteed mythic avoids the Anime Galaxies problem Balakay criticized (guarantee hands everyone the same best trait), provided no single mythic trait is the clear best.
+- [Inference] Rarest trait (Damage) should not be so strong that every player is happy only with that result; keep the mythic pool balanced.
+- Pity count for the guarantee: question 14.
 
 Review flags:
 - [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
@@ -113,6 +113,16 @@ Weak-point or phase mechanics (not HP sponges). Bosses resist Control debuffs an
 - Content gates by rarity (3.2); Commons fall off in Hard+.
 - Challenge stages with restrictions for bonus gems.
 - Endless mode with scaling enemy variety, not just HP inflation.
+
+### 4.3b Macroing tension
+User: ATD players love macroing, so the design is at a crossroads. Wants gameplay "engaging, but not soul sucking" (user's text read "my soul sucking"; confirm).
+
+Proposals ([Inference], untested):
+- Built-in autoplay for easy/grind content, so players do not need external macros there. Balakay praised Galaxies' autoplay quality but said it beat the whole game, so cap it.
+- Hard/Nightmare use variation macros handle poorly: randomized enemy order or timing, mid-wave events, abilities that need manual timing.
+- Reward manual skill on hard content (bonus gems, challenge unlocks).
+- Keep grinds short so macroing is not the only way to cope with them.
+- [Unverified] Roblox rules on macros/automation; check before designing anti-macro measures.
 
 ### 4.4 Grind rule
 Unlocks come from short hard challenges, not repeated stages. [Inference] from Vanguards video: long easy grind was the complaint, hard final stage was liked.
@@ -147,9 +157,9 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 8. Farm trait: does the 30% stack with the doubling, or replace it?
 9. Full class list and which class maps to which trait (incl. Contagious and All rounder). Given so far: Speedster, Ranger, Controller, Specialist, Punisher.
 13. Concrete unique game modes, traits, and units (the hook).
-14. Reroll guarantee: random mythic or chosen mythic? Pity count? Does the guarantee reset?
+14. Reroll guarantee: pity count (after how many rerolls)? Does it reset? (Random mythic decided.)
 15. Infinity Castle: what is the "expansion" beyond a standard endless/floor mode?
-16. Farm trait: does the doubling also affect the base money per wave on non-income units, or only kills?
+16. Macro vs engagement: where is the line (autoplay allowed where, manual required where)?
 17. Demon Slayer update uses existing IP; see section 1 risk.
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
