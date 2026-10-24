@@ -251,7 +251,7 @@ Flags ([Inference]):
 - 1% Mythic rate: about 13% of players reach the 200 pity without a Mythic (0.99^200). Pity = ~10-12 days of heist income.
 - 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
 
-## 13. Equipment (proposal; user decided slots, sources, stacking)
+## 13. Equipment (approved by user)
 User: 3 slots (helmet, chest plate, weapon); buffs stack on top of traits; crafted from story/raid/challenge materials; prestigious gear from the weekly heist (higher rounds = better chance). No stat rerolls.
 
 Slot roles (proposal):
@@ -279,7 +279,9 @@ Prestigious (weekly heist), one unique effect each:
 - Chest "Last Stand": survive one lethal hit at 1 HP per run; then -20% HP for the rest of the run.
 - Weapon "Executioner": +50% damage to enemies under 25% HP; -15% damage otherwise.
 
-Balance guardrails ([Inference]):
+- Max one prestigious item per unit (User).
+
+Balance guardrails:
 - Equipment bonuses add together; their total is capped (e.g. +40% damage, -30% SPA from equipment).
 - Advanced/Prestigious = stronger numbers on the same tradeoff shape, not strictly better.
 - Numbers are placeholders; tune in playtest.
@@ -311,4 +313,4 @@ Balance guardrails ([Inference]):
 24. Raid: resolved.
 25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
-27. Equipment: approve item list, the downside rule, and the equipment cap.
+27. Equipment: resolved (approved; one prestigious per unit). Numbers tuned in playtest.
