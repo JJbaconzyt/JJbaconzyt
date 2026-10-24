@@ -268,5 +268,5 @@ Flags ([Inference]):
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
-25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: confirm banner Mythic picks, raid payout (300 proposed), and roster counts (26 proposed); raid clear length.
+25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: confirm banner Mythic picks, raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
