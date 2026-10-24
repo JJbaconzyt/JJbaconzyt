@@ -179,7 +179,7 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 17. Demon Slayer update uses existing IP; see section 1 risk.
 18. Auto battler: what does autoplay mean now (auto-place team, auto-upgrade, auto-start next round)? User said autoplay has upgrade and no ability.
 19. Round structure: how many units on board, grid or free placement, round length.
-20. Abilities (User): "Player trigger, button to select auto ability. Button can't be pressed during autoplay." Unclear: what the "auto ability" button does (toggles automatic ability firing?), and whether it is locked while autoplay is on. Autoplay itself has upgrades but no abilities (User).
+20. Abilities (User): abilities are player-triggered. There is an autocast toggle; it is not locked, but autoplay never selects or enables it. A player can toggle it on themselves, but then they are either actively playing or running an external macro. Easy grinds shouldn't need abilities; abilities are "exclusive and strong" (hard content). Open ([Inference]): if the toggle persists between runs, autoplay plus a saved toggle equals full AFK, defeating the design. Does the toggle reset each run?
 21. Does the team grow between rounds (shop, merges) or is it fixed pre-fight?
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
