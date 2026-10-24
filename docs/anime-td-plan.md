@@ -85,9 +85,11 @@ User decisions:
 
 - Taking damage is per hit (User). Tanks have 30% natural tiredness resistance (User).
 - Taunt rule (User): tanks must be killed before any other unit can be attacked, for both sides.
-  - [Inference] Range trait (global, targets highest current HP) conflicts with taunt: does it bypass tanks? (question 21)
-  - [Inference] Open: AoE/splash onto non-tanks while a tank lives? Multiple tanks, which first? Is a boss a tank?
-  - [Inference] Medic + tank behind taunt can stall fights; enemy squads need answers (anti-heal, armor pierce).
+  - AoE can hit units behind a living tank (User). With multiple tanks, any of them can be targeted (User). Bosses are not tanks (User).
+  - Enemies get every option players have: debuffs, healers, AoE, DoT, etc. (User).
+  - [Inference] Lifesteal is a third healing source (after medics and sitting out), though the user earlier cut revive because two healing forms were enough. Lifesteal on a tank behind taunt, or with the Damage trait, can stall fights or self-sustain heavily.
+  - [Inference] Enemy healers + tanks + lifesteal on both sides raise stall risk; an anti-heal debuff on both sides would counter it.
+  - [Inference] Bosses are not tanks, so a boss can be hit while an enemy tank is alive; confirm that is intended.
 - Tired effect (User): at 75%+ the unit skips every other turn. SPA nerf: "divide the tired bar by 2, then multiply that number onto the spa." Confirmed (User: "Slower"): SPA x (1 + bar/2), so 100% tired = 1.5x SPA. Skip-turn plus SPA nerf at 75%+ stacks on purpose (User).
 - No extra tiredness reduction for low-SPA / SPA-trait units (User): they tire faster, but a multiplier on a low SPA is a smaller absolute nerf, which compensates.
 
@@ -103,7 +105,7 @@ Review flags ([Inference]):
 - Passives (User): matter for big units; not "anime last stand" style with about 5 complex passives.
 - One trait per unit (User).
 - Medic (User): a unit, with several types (buff-oriented, pure heal, cleanser, etc.), so no single default medic. [Inference] With persistent damage, healing is close to mandatory, so medic types must have clear tradeoffs.
-- Class-to-trait map (proposal): Ranger→Range, Speedster→SPA, Controller→Control, Specialist→Contagious, Punisher→Damage, Economy→Farm, Balanced→All rounder.
+- Class-to-trait map (proposal; Range trait replaced by Lifesteal, so Ranger needs a new trait or a Lifesteal class): Ranger→?, Speedster→SPA, Controller→Control, Specialist→Contagious, Punisher→Damage, Economy→Farm, Balanced→All rounder.
 
 ## 5. Rarity and powercreep
 User decisions:
@@ -133,7 +135,7 @@ User: only mythic traits, equal odds; select the trait after 5 rolls per unit. R
 | Trait | Definition |
 |---|---|
 | Farm | 30% money applies only to units whose sole purpose is to generate income. Per-wave cash is a set number. Kills made by the unit with the Farm trait give double cash. Doubling applies only when a unit that does not generate cash has the trait and is on the field killing |
-| Range | Reworked (approved): global range on the grid, single target only, always targets the highest current HP enemy |
+| Lifesteal (replaces Range, User) | 20% of damage dealt is returned as health |
 | Damage | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (attacks twice as often) |
 | Control | "each hit applies random debuff effect"; bosses resist |
@@ -204,7 +206,7 @@ Update principle: no single unit absorbs months of dev time.
 14. Infinity Castle "expansion": what is the twist?
 15. Bench: resolved (2 reserve).
 16. Tiredness: resolved.
-21. Taunt rule: does Range bypass tanks; AoE onto non-tanks; order with multiple tanks; are bosses tanks?
+21. Taunt rule: resolved (AoE passes, any tank, bosses not tanks). Open: anti-heal debuff? Which class pairs with Lifesteal?
 17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
