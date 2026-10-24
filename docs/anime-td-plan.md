@@ -63,7 +63,20 @@ User decisions:
 
 ### 3.4 Economy
 - Per-wave cash is a set number (about 1000 as a starting guess, User).
-- No shop, so cash is used for in-run unit upgrades (autoplay buys upgrades). [Inference] Confirm this is the use (question 9).
+- Team stays fixed (no unit shop), but a shop exists for temporary equipment/potions bought with in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
+- [Inference] Autoplay "has upgrades" (User); confirm whether cash also buys unit upgrades, and whether autoplay uses the shop.
+
+### 3.5 Health, revive, rest, tiredness (User)
+- Recall does not heal.
+- Sitting out heals 20% per round.
+- A unit at 0 HP falls. A medic can sacrifice its healing for the next round to revive a fallen unit at 25% HP.
+- Tiredness: units that do too much "work" fill a tired bar, which nerfs SPA. User: "spa now correlates to how often the unit moves". Sitting out lowers the bar.
+
+Review flags ([Inference]):
+- Team is 5 and fights are 5v5, so sitting a unit out means fighting 4v5. Is the roster bigger than 5 (a bench), or is sitting out a real sacrifice? (question 15)
+- Unclear: does "SPA correlates to how often the unit moves" mean movement fills the tired bar, or that SPA now also sets move frequency? (question 16)
+- SPA trait halves SPA. If SPA also drives movement or work, SPA-trait units tire faster; decide if that is intended.
+- Three rest mechanics (HP, revive, tiredness) all push toward benching. Strong depth, but heavy for new players and for autoplay logic. Tutorialize each one.
 
 ## 4. Units
 - Roles (proposal): Shooter, Burst, Area, Wall, Support/Medic, Economy, Control.
@@ -126,12 +139,12 @@ Review flags ([Inference]):
 User: unique game modes, traits, and units; challenges play into the "oddity" idea.
 
 - Infinity Castle (first update, Demon Slayer): endless floors up the map. Ideas: floor modifiers (one rule per floor), a boss every 10th floor, persistent damage across floors with limited recovery.
-- Rest sites between groups (like a campfire): heal part of the team or take a buff, costs something. [Inference] No shop, so these are decisions rather than purchases.
-- Branching map: choose between a safe group and an elite group for better rewards.
+- Rest sites between groups (like a campfire): heal part of the team or take a buff, costs something.
+- Branching map (User: in): "ydk what you're gonna get" — outcomes hidden. [Inference] A fully blind choice is a coin flip, not a decision; consider partial hints (icons, danger level) so the pick involves skill.
 - Daily oddity: one rule set per day (e.g. no medics, double enemy speed) with bonus rolls.
 - Ghost duels: fight another player's saved team asynchronously, no live PvP netcode needed.
 - Raid boss: a large boss fight with abilities mattering most.
-- Gauntlet: no recall heals, one shared life pool.
+- Gauntlet (User: becomes a difficulty level, not a mode). Old definition ("no recall heals") no longer applies since recall never heals; proposal: no sit-out healing and no revives.
 - Counter pick: enemy composition reacts to the class you used most.
 
 ## 9. Monetization
@@ -162,9 +175,13 @@ Update principle: no single unit absorbs months of dev time.
 6. Rarity multiplier per tier and the combined cap with traits.
 7. Which classes exist in full, and the final class-to-trait map.
 8. Enemy types and boss mechanics for the auto battler.
-9. What cash buys in a run with no shop (unit upgrades?).
-10. Does a unit that reaches 0 HP stay dead for the run, or return after the group?
-11. Does recall heal anything, or only reposition? Any limits on recall?
+9. Shop: item list (equipment, potions), prices, and whether cash also buys unit upgrades.
+10. Fallen units: resolved (stay down unless a medic revives at 25%).
+11. Recall: resolved (no heal; sitting out heals 20%/round).
 12. Rolls per challenge, and whether the trait pick resets on a later reroll.
 13. Which of the section 8 modes are in the first release.
 14. Infinity Castle "expansion": what is the twist?
+15. Bench: is the run roster larger than 5, or does sitting out mean fighting with fewer units?
+16. Tiredness: what counts as "work" (attacks, movement, damage taken), and what does "SPA correlates to how often the unit moves" mean exactly?
+17. Gauntlet difficulty rules.
+18. Branching map: fully hidden, or partial hints?
