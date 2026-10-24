@@ -178,7 +178,9 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 16. Autoplay: exactly what makes it "not efficient" on stages (randomized waves, ability timing, resource limits)?
 17. Demon Slayer update uses existing IP; see section 1 risk.
 18. Auto battler: what does autoplay mean now (auto-place team, auto-upgrade, auto-start next round)? User said autoplay has upgrade and no ability.
-19. Round structure: how many units on board, grid or free placement, round length.
+19. Round structure (User): 5v5, multiple rounds, enemies can loosely scale with the player's unit strength. Open: grid or free placement, round length, how "loosely" scaling works.
+   - [Inference] Scaling enemies to unit strength can erase the visible rarity gaps and the reason to grind (user wants Mythic >> Common). Cap the scaling, e.g. floors/modes have a minimum and maximum enemy power.
+   - [Inference] Only 5 enemies at a time: Contagious ("spread to 3 other enemies") hits most of the enemy team; Farm trait on one of 5 slots costs a combat slot; 1/team Contagious is easier to enforce.
 20. Abilities (User): abilities are player-triggered. There is an autocast toggle; it is not locked, but autoplay never selects or enables it. A player can toggle it on themselves, but then they are either actively playing or running an external macro. Easy grinds shouldn't need abilities; abilities are "exclusive and strong" (hard content). Open ([Inference]): if the toggle persists between runs, autoplay plus a saved toggle equals full AFK, defeating the design. Decided (User): the autocast toggle resets every run.
 21. Does the team grow between rounds (shop, merges) or is it fixed pre-fight?
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
