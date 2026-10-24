@@ -16,7 +16,7 @@ Core loop (User):
 
 [Inference] Risks: no longer an ATD (audience expectation), synergy balance is harder, units need combat AI, and the persistent-damage hook must stay fun rather than just tedious.
 
-Open decision: characters. User wants existing anime IP. [Unverified] this risks copyright takedown/ban, worse with paid gacha. Safe path: original characters built on familiar archetypes. User to decide.
+Characters: existing anime IP. User accepts the risk. [Unverified] takedown/ban risk, worse with paid gacha.
 
 ## 2. Research basis (Balakay transcripts; one creator's opinion)
 | Complaint | Source video | Design response |
@@ -47,7 +47,9 @@ Open decision: characters. User wants existing anime IP. [Unverified] this risks
 - ~25 enemies total per round, in groups.
 - Scale up with unit strength, never down (User). [Inference] The floor keeps weak teams facing baseline enemies so rarity gaps stay visible; stronger teams face harder enemies and need better rewards.
 - Boss enemies: reduced percent-damage effects and Control resistance (see traits).
-- Enemy types, mechanics, and bosses: to be designed (question 8).
+- Enemy types (User): same types as player units (tank, DPS, medic, debuffs, AoE, DoT, etc.).
+- Bosses (User): stronger, with 1-2 passives.
+- [Inference] Mirroring player unit types lets enemies reuse unit code and models, which cuts scope.
 
 ### 3.3 Autoplay and abilities
 User decisions:
@@ -268,5 +270,5 @@ Flags ([Inference]):
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
-25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: confirm banner Mythic picks, raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
+25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
 26. Update 1: ships with release; next update content open.
