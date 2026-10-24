@@ -123,6 +123,7 @@ User decisions:
 | Common | Clears early content; falls off in hard content; evolve/fodder material |
 | Rare | Clears normal content; viable early hard |
 | Epic | Clears hard |
+| Legendary | Between Epic and Mythic (User: new tier) |
 | Mythic | Needed for top-end content |
 
 Guardrails ([Inference]): scheduled powercreep with written multipliers; new units fill existing tiers; old units buffed in rebalance patches; a hard cap on combined rarity x trait multiplier, set by playtest. Example: Mythic 3x with a 4x trait is 12x over a plain Common.
@@ -188,8 +189,8 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 | 1 | Prototype: grid, 5v5 auto-combat, recall with persistent damage, 3 units, 1 enemy group |
 | 2 | MVP: one map (~25 enemies), 6 units including a medic, traits, autoplay and ability toggle, tutorial, summon with pity, save data |
 | 3 | Closed playtest + pick-rate telemetry; tune balance and the multiplier cap |
-| 4 | Launch: first map set, story, challenges, endless |
-| 5 | First update (User): Demon Slayer with an expanded Infinity Castle |
+| 4 | Launch (heavy, see 12): story, challenges, raid, daily/weekly heist, Infinity Castle with Demon Slayer units |
+| 5 | Update 1: content open |
 | 6 | Cadence: small frequent updates, one rebalance patch per quarter |
 
 Update principle: no single unit absorbs months of dev time.
@@ -203,6 +204,27 @@ Launch strategy (User):
 - Galaxies commenters criticized it for feeling "AI generated". Hand-made art and UI matter.
 - A drought can't be predicted. Build now, keep a launch-ready build, pick the date by watching competitors.
 - Proposal: define a cut line, so if the window opens early, the launch ships with the core and the rest becomes the first update.
+
+## 12. Launch content and economy (User)
+- Story: 3 stages x 5 acts.
+- Challenges.
+- One raid, any anime; capsules give 1-3 units from that anime; side content.
+- 35 base characters, varied anime: 8 Common, 6 Rare, 6 Epic, 5 Legendary, 10 Mythic. Demon Slayer units are inside the 35 and are all Mythic.
+- Infinity Castle (at launch): alternating buffs/debuffs per floor, gems per clear, no cap, enemies scale forever. Eventually too hard even for the best players; more unlocks per update via balanced powercreep.
+- Demon Slayer units from Infinity Castle floor milestones: 5 Zenitsu, 10 Inosuke, 20 Giyu, 35 Douma, 50 Kokushibo, 100 Muzan.
+- Daily heist: max 10 rounds; enemies start scaled under you and end over you; ~4 rounds beatable no matter what; 1k gems per round, boss +5k. May also give equipment materials.
+- Summon cost: 250 gems. User: players who need summons get ~4-5k/day (16-20 pulls); rich players need them less.
+- Trait rolls: challenges 1-3% drop, daily heist 10%, weekly heist guaranteed, plus codes. Still 5 rolls per unit, then pick.
+- Equipment: more customization; buffs stack on top of traits; crafted from story/raid/challenge resources. Prestigious equipment locked behind weekly heist; higher rounds give better chance.
+- No stat rerolls.
+
+Flags ([Inference]):
+- 10 of 35 units are Mythic: top-heavy pool.
+- Rarity x trait x equipment = three stacked multipliers; the combined cap matters more now.
+- Infinity Castle self-caps by difficulty, so gem inflation is limited; top players still earn most.
+- Floor 100 Muzan is a top-player skill chase; Balakay liked hard unlock stages over long grinds.
+- Prestigious gear behind high weekly rounds: rich-get-richer.
+- 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
 
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
@@ -226,3 +248,8 @@ Launch strategy (User):
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
 20. Does the bench count toward "5 rolls per unit" or team limits for Contagious (1 per team)?
+22. Weekly heist rules.
+23. Equipment slots and item list.
+24. Raid capsule odds.
+25. Infinity Castle gems per floor.
+26. Update 1 content.
