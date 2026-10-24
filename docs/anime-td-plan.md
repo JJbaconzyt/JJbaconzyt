@@ -345,32 +345,20 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 [Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps (no Legendary tank, no Epic/Legendary medic, Economy only at Common) are accepted (User): lower-rarity units get replaced, so not every role needs every rarity. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
 ## 11. Open questions
-1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
-2. Team size and art pipeline (Roblox-style models vs high-poly).
-3. Solo vs co-op.
-4. Art style and setting.
-5. Pity numbers and odds for units.
-6. Resolved: per-unit base stats (Common ~50, Mythic ~375 DPS), no cap. Confirm in-between anchors.
-7. Which classes exist in full, and the final class-to-trait map.
-8. Enemy types and boss mechanics for the auto battler.
-9. Shop: item list (equipment, potions), prices, and whether cash also buys unit upgrades.
-10. Fallen units: resolved (stay down for the run; no revive).
-11. Recall: resolved (no heal; sitting out heals 20%/round).
-12. Rolls per challenge, and whether the trait pick resets on a later reroll.
-13. Which of the section 8 modes are in the first release.
-14. Infinity Castle "expansion": what is the twist?
-15. Bench: resolved (2 reserve).
-16. Tiredness: resolved.
-21. Taunt rule: resolved. Class list accepted as-is (User: "I like what we have"): Speedster, Specialist, Punisher, Medic, Economy, Balanced.
-17. Gauntlet: resolved (see section 8).
-18. Branching map: resolved (random presets both sides).
-19. Autoplay and shop: resolved (autoplay does not use the shop).
-20. Does the bench count toward "3 rolls per unit" or team limits for Contagious (1 per team)?
-22. Weekly heist: resolved.
-23. Equipment: item list and stats (slots resolved).
-24. Raid: resolved.
-25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Banner picks confirmed (User). Open: raid payout (300 proposed), and roster counts (26 proposed); raid clear length (User: decide in testing; tune raid payout to it).
-26. Update 1: ships with release; next update content open.
-27. Equipment: resolved (approved; one prestigious per unit). Numbers tuned in playtest.
-28. Mythic kits: resolved (approved). Numbers tuned in playtest.
-29. Non-Mythic kits: approve section 15 (incl. Usopp->Nami, Renji->Sakura swaps).
+Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
+
+Still open:
+1. Non-Mythic kits: approve section 15 (incl. Usopp->Nami, Renji->Sakura swaps, Chad added).
+2. Confirm in-between DPS anchors: Rare ~100, Epic ~170, Legendary ~260.
+3. Damage trait at 300% (flagged for rebalancing in section 6).
+4. Lower-tier summon pity (Mythic pity 200 is set).
+5. Shop: potion/temporary equipment list and prices.
+6. Does a trait pick reset on a later reroll?
+7. Does the bench count for Contagious (1 per team)?
+8. Raid payout (300 gems proposed) and clear length: set in testing.
+9. Art style, model style (Roblox-style vs high-poly), setting.
+10. Solo vs co-op.
+11. Game name.
+12. Tech plan for the build session (scripts, data, saving).
+13. Content for the update after launch.
+14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
