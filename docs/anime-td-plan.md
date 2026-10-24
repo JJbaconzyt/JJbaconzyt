@@ -423,16 +423,19 @@ Kit tables above use the real names for clarity; the game uses these. They avoid
 
 [Inference] Altered names lower takedown risk but do not remove it; models stay recognizable. ALS also carries an "inspired content" disclaimer in its game description; do the same.
 
+## 17. Setting, mode, name (User)
+- Setting: multiverse (fits the varied-anime roster).
+- Solo only (no co-op).
+- Trait rerolls: a later reroll also lets the player pick on the 3rd roll again.
+- Contagious (1 per team) counts the bench too (7-unit run roster).
+- Name: "Anime ____". Candidates (proposal), checked against Roblox search on 2026-10-24: Anime Rift, Anime Convergence, Anime Crossfire, Anime Fracture, Anime Warbands showed no same-name game in top results. Taken: Anime Nexus (an RNG game, ~630 players), Anime Multiverse (tiny game). [Inference] Roblox does not reserve names; a clash only matters for search.
+
 ## 11. Open questions
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
-6. Does a trait pick reset on a later reroll?
-7. Does the bench count for Contagious (1 per team)?
 8. Raid payout (300 gems proposed) and clear length: set in testing.
-9. Setting/world theme (art style resolved, section 9b).
-10. Solo vs co-op.
-11. Game name.
+11. Game name: "Anime ____" (User); candidates in section 17.
 12. Tech plan for the build session (scripts, data, saving).
-13. Content for the update after launch.
+13. Content for the update after launch: TBD (User).
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
