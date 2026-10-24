@@ -1,110 +1,116 @@
 # Anime TD (Roblox) – Full Plan
 
-Status: draft. Everything under "Design" is a proposal, not tested. Claims about Roblox policy and player opinion are marked [Unverified].
+Status: draft. Items marked "User:" are decisions quoted or paraphrased closely from the user. Everything else is a proposal, not tested. Claims about Roblox policy and player opinion are marked [Unverified]. Inferences are marked [Inference].
 
 ## 1. Vision
-Lane-based anime tower defense on Roblox. Hook: PvZ-style lanes (the mode Balakay praised in the Vanguards anniversary video), gacha kept (genre staple), but no "one best option" chase.
+Classic path-based anime tower defense on Roblox (User decision: PvZ-style lanes scrapped, "it turns into way more of a defender"). Gacha kept (genre staple). Traits kept, balanced as a hierarchy. Balanced powercreep is wanted.
+
+[Inference] Risk: classic path TD is the genre default, so it needs a distinguishing hook to avoid the "slop" feel the user wants to avoid. Earlier suggestion: units bend or block the path (maze). Not decided.
 
 Open decision: characters. User wants existing anime IP. [Unverified] this risks copyright takedown/ban, worse with paid gacha. Safe path: original characters built on familiar archetypes. User to decide.
 
 ## 2. Research basis (Balakay transcripts, one creator's opinion)
 | Complaint | Source video | Design response |
 |---|---|---|
-| 1-placement 250% trait makes other traits useless | Galaxies | Every unit/trait has a tradeoff; pick-rate cap in playtests |
-| Gambling OK, broken 0.1% chase is the problem | Galaxies | Pity + no best-in-slot rare |
+| 1-placement 250% trait makes other traits useless | Galaxies | Trait hierarchy with class fit; pick-rate cap in playtests |
+| Gambling OK, broken 0.1% chase is the problem | Galaxies | Pity + no do-it-all best-in-slot trait |
 | Autoplay beats whole game | Galaxies | Hard stages need manual counters |
 | 2x gems/gold paywall = "greedy" | Galaxies | Free speed toggle, no multiplier paywall on core income |
-| Samey unit passives | Galaxies | Each unit changes how you play |
+| Samey unit passives | Galaxies | Passives matter for big units, kept simple |
 | 3-4h boring grind to unlock a unit | Vanguards | Hard, short unlock challenges |
 | Months spent on one unit | Vanguards | Roadmap spreads effort across many units/modes |
-| Damage and HP divided by 10, powercreep unfixed | Vanguards | Fixed power band; new units = sidegrades |
+| Damage and HP divided by 10, powercreep unfixed | Vanguards | Planned, scheduled powercreep (3.2) with rebalance patches |
 | Raid HP up, drops unchanged | Vanguards | Change drop rate with any difficulty change |
 | New mode has no tutorial | Vanguards | Tutorial stage per mechanic |
 | Fake choice (Daggers of Destruction 99%) | Vanguards | Same pick-rate rule |
 
 ## 3. Units + gacha + balance
 
-### 3.1 Roles (each lane unit fits one)
-- Shooter: single-lane steady damage.
-- Burst: high damage, long cooldown.
-- Area: hits 3 lanes, short range.
-- Wall: blocks, low damage.
-- Support: buff adjacent tiles / heal.
-- Economy: generates energy (placement currency).
-- Control: slow, stun, push back.
-- Lane-swapper: moves enemies between lanes.
+### 3.1 Units, roles, classes, passives
+- Roles (proposal): Shooter, Burst, Area, Wall, Support, Economy (Farm), Control.
+- Classes (User): each unit has a class that corresponds to a trait. If the unit's trait matches its class, the trait is 20% stronger.
+- Passives (User): should matter for big units. Not "anime last stand" style where there are around 5 complex passives; simple, but present.
+- One trait per unit (User).
 
-### 3.2 Rarity (USER DECISION: visible power gaps between tiers)
-User: "There should be seen gaps between the rarities, because if a common can technically beat the game, why would anyone go for a mythic."
+### 3.2 Rarity and powercreep
+User decisions:
+- "There should be seen gaps between the rarities, because if a common can technically beat the game, why would anyone go for a mythic."
+- Powercreep is needed, "or else there's no incentive to play and grind"; wanted: balanced powercreep. A Common shouldn't be equal to a Mythic when the Mythic costs far more grind/summons.
+- Commons shouldn't be used permanently. Chosen mechanism: both content gating and evolve/fodder use.
+- Rarity power and trait power multiply.
 
 | Rarity | Intent |
 |---|---|
-| Common | Clears early/Normal content; falls off in Hard+ |
+| Common | Clears early/Normal content; falls off in Hard+; evolve/fodder material |
 | Rare | Clears Normal; viable early Hard |
 | Epic | Clears Hard |
 | Mythic | Needed for top-end content (Nightmare, endless depth) |
 
-Guardrails (my proposal, [Inference] from Balakay's powercreep complaint): gaps are fixed at launch and written down as multipliers; new units slot into existing tiers instead of creating a new top tier; old units get buffed in rebalance patches. Gap size is still an open number (see 7).
+Proposed guardrails ([Inference], from Balakay's powercreep complaint):
+- Powercreep is scheduled and bounded: each tier has a written multiplier; new units fill tiers instead of opening a new top tier unannounced.
+- Old units get buffs in rebalance patches so powercreep does not obsolete them completely.
+- Because rarity and trait multiply, set a hard cap on the combined multiplier and playtest it. Example: Mythic 3x with Damage trait 4x is 12x over a no-trait Common. [Inference] this gap is large and could invalidate lower tiers or content tuning.
 
 ### 3.3 Balance rules
-1. Pick-rate telemetry per unit per mode. Any unit >40% of top-tier clears gets reviewed. (Threshold is a starting guess.)
-2. Every unit gets one clear weakness (cost, range, cooldown, vulnerability).
-3. Numbers frozen: HP and damage scale bands set before launch; new content may not widen them.
-4. Traits: see 3.5. Goal (user): a hierarchy of traits, but no default trait that nearly every unit runs.
-5. New unit ships with a counter-enemy or counter-stage so it is not strictly best.
-6. Quarterly rebalance patch buffs old units before adding new ones.
+1. Pick-rate telemetry per unit and per trait. Any trait or unit above 40% of top-tier clears gets reviewed (starting guess).
+2. Every unit has a clear weakness (cost, range, cooldown, vulnerability).
+3. Combined rarity x trait multiplier capped (see 3.2).
+4. Trait goal (User): a hierarchy, but no default trait that practically every unit runs. Class bonus (20%) is the spreading mechanism.
+5. New unit ships with a counter-enemy or counter-stage.
+6. Quarterly rebalance patch.
 
 ### 3.4 Gacha
 - Currency: gems, earnable free (stage clears, daily, hard challenges); optional paid packs.
 - Pity: guaranteed Epic+ by pull N, guaranteed Mythic by pull M (starting guess 30 / 90; tune after tests).
-- Rate-up banner rotates, carrying 1 featured unit; featured unit never power-creeps.
-- Duplicates convert to upgrade shards (small, capped bonus).
+- Rate-up banner rotates, carrying 1 featured unit.
+- Duplicates convert to upgrade shards (small, capped bonus). Commons also usable as evolve fodder (3.2).
 - Odds shown in the summon screen.
-- Traits are in the game (user decision), see 3.5.
+- Trait acquisition method (roll vs fixed): open question 7.
 
-### 3.5 Traits (user's draft, wording kept as given)
-Goal (user): "to have a hierarchy of traits, but to not have one that is the default and practically every unit runs it."
+### 3.5 Traits
+One per unit. Goal (User): "to have a hierarchy of traits, but to not have one that is the default and practically every unit runs it." Traits are spread so each can be used; class matching gives 20% extra.
 
-| Trait | User's definition |
+| Trait | Definition |
 |---|---|
-| Farm | "30% money on farm unit; double cash/wave and cash killed by the unit on dps" |
-| Range | "Unit gains whole map range, and will target the closest enemy. Force single target only" |
+| Farm | User: "30% money on farm unit"; base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would |
+| Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User) |
 | Damage (rarest) | "300% damage boost, no passives allowed" |
-| SPA | "Cuts SPA in half, nerfs all other stats by 20%" |
-| Control | "each hit applies random debuff effect" |
-| Contagious (biggest, 1/team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%" |
-| All rounder | "buff all stats by 20%" |
+| SPA | "Cuts SPA in half, nerfs all other stats by 20%" (User confirmed: attacks twice as often) |
+| Control | "each hit applies random debuff effect"; bosses resist (User) |
+| Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
+| All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
 
-Review flags (see chat/section 7 for questions):
-- Damage trait: 300% for the rarest roll looks like Balakay's "250% one-placement trait" complaint. [Inference] If most units have weak passives, losing them costs little and it becomes the default.
-- Range trait: whole-map range conflicts with lane identity unless "closest" is defined (closest to unit, to base, or in own lane).
-- Ambiguous wording: Farm second half, SPA with All rounder, Contagious "10% damage" base.
+Review flags:
+- [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
+- [Inference] Contagious: 10% max HP spreading to 3 enemies per hit scales well against swarms. Chain rules not yet defined.
+- [Inference] Seven traits need at least as many classes; Contagious (1/team) and All rounder need a class or no class bonus.
 
 ## 4. Enemies + stages
 
-### 4.1 Enemy types (MVP set of 8)
+### 4.1 Enemy types (MVP set of 8, proposal, adapted to path TD)
 | Enemy | Behavior | Forces |
 |---|---|---|
-| Grunt | Walks lane | Baseline |
+| Grunt | Walks path | Baseline |
 | Runner | Fast | Burst/control |
 | Tank | High HP | Sustained DPS |
 | Shielded | Immune to first N hits or one damage type | Mixed damage |
-| Lane-jumper | Switches lane at set column | Area/support cover |
-| Flyer | Skips walls | Anti-air or range |
-| Pusher | Knocks back a unit row | Wall placement |
+| Flyer | Ignores path blockers / flies straight | Range or anti-air |
+| Pusher | Knocks back or disables nearby units | Unit placement |
 | Summoner | Spawns grunts | Priority targeting |
+| Path-skipper | Teleports forward at set points | Coverage near the base |
 
 ### 4.2 Bosses
-Weak-point or phase mechanics (not HP sponges). Example: boss alternates lanes and exposes a weak spot only mid-lane-switch.
+Weak-point or phase mechanics (not HP sponges). Bosses resist Control debuffs and take reduced Contagious damage (5% current HP).
 
 ### 4.3 Difficulty curve
 - World 1 teaches mechanics one at a time (tutorial stage per mechanic).
 - Normal / Hard / Nightmare per stage. Hard and Nightmare require manual play: autoplay may not place counters.
-- Challenge stages with restrictions (no Economy units, only 4 slots) for bonus gems.
+- Content gates by rarity (3.2); Commons fall off in Hard+.
+- Challenge stages with restrictions for bonus gems.
 - Endless mode with scaling enemy variety, not just HP inflation.
 
 ### 4.4 Grind rule
-Unlocks come from short hard challenges, not repeated stages. Any grind has varied stages. [Inference] from Vanguards video: long easy grind was the complaint, hard final stage was liked.
+Unlocks come from short hard challenges, not repeated stages. [Inference] from Vanguards video: long easy grind was the complaint, hard final stage was liked.
 
 ## 5. Monetization
 - Free: 2x/3x speed, autoplay on easy content, UI options (colorblind mode, UI size; Balakay noted these positively).
@@ -115,10 +121,10 @@ Unlocks come from short hard challenges, not repeated stages. Any grind has vari
 ## 6. Roadmap
 | Phase | Deliverable |
 |---|---|
-| 0 | Resolve IP decision, name, art style |
-| 1 | Prototype: lane grid, 3 units, 3 enemies, one stage |
-| 2 | MVP: 6 units, 8 enemies, 10 waves + boss, tutorial, summon with pity, save data |
-| 3 | Closed playtest + pick-rate telemetry; tune balance |
+| 0 | Resolve IP decision, name, art style, distinguishing hook |
+| 1 | Prototype: path, placement, 3 units, 3 enemies, one stage |
+| 2 | MVP: 6 units, 8 enemies, 10 waves + boss, tutorial, summon with pity, traits, save data |
+| 3 | Closed playtest + pick-rate telemetry; tune balance and multiplier cap |
 | 4 | Launch: World 1, 3 modes (story, challenge, endless) |
 | 5 | Update cadence: small frequent updates (new unit + stage + counter), one rebalance patch per quarter |
 
@@ -126,15 +132,14 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 
 ## 7. Open questions
 1. Original vs existing-IP characters (user leaning existing).
-2. Team size and art pipeline (Roblox-style models vs high-poly; Vanguards comments disliked uncanny high-poly models).
-3. Solo vs co-op lanes.
-4. Art style and setting.
-5. Exact pity numbers and odds.
-6. Rarity gap size (e.g. multiplier per tier) and which content needs which tier.
-7. Traits: one per unit? How are they obtained (roll, pity, odds per trait)?
-8. Farm trait: exact meaning of "double cash/wave and cash killed by the unit on dps".
-9. Range trait: "closest" measured from what; does it ignore lanes?
-10. SPA: does "SPA cut in half" mean attacks twice as often? Does All rounder shorten SPA?
-11. Contagious: is "10% damage" 10% of the hit, of enemy max HP, or current HP? Does it chain? Boss immunity?
-12. Control: debuff pool, boss immunity, proc limits for fast attackers.
-13. Do rarity multipliers and trait multipliers stack multiplicatively?
+2. Distinguishing hook for path TD (maze/path bending, or something else).
+3. Team size and art pipeline (Roblox-style models vs high-poly; Vanguards comments disliked uncanny high-poly models).
+4. Solo vs co-op.
+5. Pity numbers and odds.
+6. Rarity multiplier per tier and combined cap with traits.
+7. How traits are obtained (roll, pity, odds per trait).
+8. Farm trait: does the "30% money on farm unit" still apply on top of the doubling?
+9. Class list and which class maps to which trait (incl. Contagious and All rounder).
+10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
+11. Control: debuff pool and proc limits for fast attackers.
+12. Commons: evolve/fodder rules (how many Commons per upgrade, which target units).
