@@ -2,8 +2,21 @@
 
 Status: draft. Items marked "User:" are decisions quoted or paraphrased closely from the user. Everything else is a proposal, not tested. Claims about Roblox policy and player opinion are marked [Unverified]. Inferences are marked [Inference].
 
+## 0. PIVOT (User): PvE auto battler
+User decision: instead of classic ATD, a PvE auto battler. Players place a team, units fight automatically, and the player adjusts between rounds. This supersedes the path-TD content in sections 1, 4, and 6 below, which are kept as reference until rewritten.
+
+What carries over: gacha units, rarity gaps, powercreep, classes and traits, trait rolls (5 per unit, pick), Demon Slayer first update with Infinity Castle, farm/cash economy (per-wave cash as round income), codes, challenges.
+
+What changes ([Inference]):
+- Enemies are teams/waves of fighters, not path walkers; the enemy table in 4.1 is obsolete.
+- Autoplay: user said it "has upgrade, no ability". In an auto battler, combat is already automatic; what "autoplay" means now needs redefining (question 18).
+- Macro problem mostly disappears: the skill is team building and placement.
+- Risks: it's no longer an ATD (audience expectation), synergies multiply balance work, units need combat AI.
+
+Open: question 18-21.
+
 ## 1. Vision
-Classic path-based anime tower defense on Roblox (User decision: PvZ-style lanes scrapped, "it turns into way more of a defender"). Gacha kept (genre staple). Traits kept, balanced as a hierarchy. Balanced powercreep is wanted.
+(Superseded by section 0.) Classic path-based anime tower defense on Roblox (User decision: PvZ-style lanes scrapped, "it turns into way more of a defender"). Gacha kept (genre staple). Traits kept, balanced as a hierarchy. Balanced powercreep is wanted.
 
 Hook (User): "unique game modes, traits, and units." [Inference] This is a direction, not yet a design. Classic path TD is the genre default, so at least one concrete mechanic or mode needs specifying to avoid the "slop" feel. Earlier suggestion: units bend or block the path (maze). Not decided.
 
@@ -164,6 +177,10 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 15. Infinity Castle: what is the "expansion" beyond a standard endless/floor mode?
 16. Autoplay: exactly what makes it "not efficient" on stages (randomized waves, ability timing, resource limits)?
 17. Demon Slayer update uses existing IP; see section 1 risk.
+18. Auto battler: what does autoplay mean now (auto-place team, auto-upgrade, auto-start next round)? User said autoplay has upgrade and no ability.
+19. Round structure: how many units on board, grid or free placement, round length.
+20. Do abilities fire automatically in combat or manually? (Class/ability design.)
+21. Does the team grow between rounds (shop, merges) or is it fixed pre-fight?
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
 12. Commons: evolve/fodder rules (how many Commons per upgrade, which target units).
