@@ -80,10 +80,11 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 | Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
 | All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
 
-Obtaining traits (User): through story, codes, and challenges. Trait rerolls are "hella rare", with a guaranteed mythic (User clarified: a random mythic, not a chosen one). Codes give 1-2 rerolls, restricted to updates.
-- [Inference] A random guaranteed mythic avoids the Anime Galaxies problem Balakay criticized (guarantee hands everyone the same best trait), provided no single mythic trait is the clear best.
-- [Inference] Rarest trait (Damage) should not be so strong that every player is happy only with that result; keep the mythic pool balanced.
-- Pity count for the guarantee: question 14.
+Obtaining traits (User): through story, codes, and challenges. Codes give 1-2 rerolls, restricted to updates.
+Latest decision (User): "there's only gonna be mythic traits, each equal odds, select your trait after 5 rolls/unit". Earlier statements ("hella rare" rerolls, random mythic guarantee, "Damage (rarest)") are superseded where they conflict.
+- [Inference] Selecting a trait after 5 rolls is a chosen-trait guarantee. Balakay's Galaxies criticism: the guarantee hands everyone the same best trait. With only 5 rolls it is cheap, so every player can pick the best trait for each unit. The hierarchy goal (some traits above others) and the "no default trait" goal now depend entirely on traits being close in power, and on class/role fit.
+- [Inference] With equal odds and all traits mythic, the "Damage (rarest)" label no longer fits; the Damage trait's 300% needs rebalancing against the others.
+- [Inference] Rerolls were called rare, but 5 rolls per unit across a roster is many rolls. How rolls are earned must match that (question 14).
 
 Review flags:
 - [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
@@ -117,8 +118,10 @@ Weak-point or phase mechanics (not HP sponges). Bosses resist Control debuffs an
 ### 4.3b Macroing tension
 User: ATD players love macroing, so the design is at a crossroads. Wants gameplay "engaging, but not soul sucking" (user's text read "my soul sucking"; confirm).
 
+User decisions: likes the autoplay system. Autoplay is available everywhere, but it "won't work efficiently on stages" (read as: it is available in all content but is weak on stages that need manual play; confirm).
+
 Proposals ([Inference], untested):
-- Built-in autoplay for easy/grind content, so players do not need external macros there. Balakay praised Galaxies' autoplay quality but said it beat the whole game, so cap it.
+- Built-in autoplay everywhere, so players do not need external macros. Balakay praised Galaxies' autoplay quality but said it beat the whole game, so autoplay must be a weaker player than a human on hard content.
 - Hard/Nightmare use variation macros handle poorly: randomized enemy order or timing, mid-wave events, abilities that need manual timing.
 - Reward manual skill on hard content (bonus gems, challenge unlocks).
 - Keep grinds short so macroing is not the only way to cope with them.
@@ -157,9 +160,9 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 8. Farm trait: does the 30% stack with the doubling, or replace it?
 9. Full class list and which class maps to which trait (incl. Contagious and All rounder). Given so far: Speedster, Ranger, Controller, Specialist, Punisher.
 13. Concrete unique game modes, traits, and units (the hook).
-14. Reroll guarantee: pity count (after how many rerolls)? Does it reset? (Random mythic decided.)
+14. Trait rolls: does "5 rolls/unit" mean 5 rolls on each unit, then pick? What is a roll's cost and source (rare rerolls vs a common currency)? Does the pick reset on re-rolling later?
 15. Infinity Castle: what is the "expansion" beyond a standard endless/floor mode?
-16. Macro vs engagement: where is the line (autoplay allowed where, manual required where)?
+16. Autoplay: exactly what makes it "not efficient" on stages (randomized waves, ability timing, resource limits)?
 17. Demon Slayer update uses existing IP; see section 1 risk.
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
