@@ -137,7 +137,7 @@ Balance rules:
 4. New units ship with counter content.
 
 ## 6. Traits
-User: only mythic traits, equal odds; select the trait after 5 rolls per unit. Rolls come from codes (1-2 per code, restricted to updates) and challenges. Traits also come from story. One trait per unit. Goal: a hierarchy of traits, but no default trait that nearly every unit runs.
+User: only mythic traits; all trait rarities equal, but a trait matching the unit's class has double chance. The player picks the trait on the 3rd roll on the same unit (was 5). Rolls come from codes (1-2 per code, restricted to updates) and challenges. Traits also come from story. One trait per unit. Goal: a hierarchy of traits, but no default trait that nearly every unit runs.
 
 | Trait | Definition |
 |---|---|
@@ -151,11 +151,11 @@ User: only mythic traits, equal odds; select the trait after 5 rolls per unit. R
 | All rounder | "buff all stats by 20%" (SPA shortened too) |
 
 Review flags ([Inference]):
-- Chosen-trait pick after 5 rolls is the Galaxies pattern in cheaper form: everyone can pick the best trait. The hierarchy depends on traits being close in power and on class fit.
+- Chosen-trait pick on the 3rd roll is the Galaxies pattern in cheaper form: everyone can pick the best trait. The hierarchy depends on traits being close in power and on class fit.
 - Damage trait at 300% needs rebalancing now that all traits are mythic with equal odds.
 - Contagious at 25% max HP with no proc limit kills normal enemies in four hits; revisit in playtest.
 - Farm is only useful if cash matters in a run with no shop.
-- 5 rolls per unit across a roster is many rolls; codes and challenges must supply them without making them trivial.
+- 3 rolls per unit is cheap; class-match double chance mostly matters for the first 2 rolls; codes and challenges must supply them without making them trivial.
 
 ## 7. Gacha
 - Gems earnable free (stage clears, daily, challenges); optional paid packs.
@@ -216,7 +216,7 @@ Launch strategy (User):
 - Demon Slayer units from Infinity Castle floor milestones: 5 Zenitsu, 10 Inosuke, 20 Giyu, 35 Douma, 50 Kokushibo, 100 Muzan.
 - Daily heist: max 10 rounds; enemies start scaled under you and end over you; ~4 rounds beatable no matter what; 1k gems per round, boss +5k. May also give equipment materials.
 - Summon cost: 250 gems. User: players who need summons get ~4-5k/day (16-20 pulls); rich players need them less.
-- Trait rolls: challenges 1-3% drop, daily heist 10%, weekly heist guaranteed, plus codes. Still 5 rolls per unit, then pick.
+- Trait rolls: challenges 1-3% drop, daily heist 10%, weekly heist guaranteed, plus codes. Pick on the 3rd roll per unit.
 - Equipment: more customization; buffs stack on top of traits; crafted from story/raid/challenge resources. Prestigious equipment locked behind weekly heist; higher rounds give better chance.
 - No stat rerolls.
 - Weekly heist: same as daily heist, higher loot, resets weekly.
@@ -249,7 +249,7 @@ Flags ([Inference]):
 - Prestigious gear behind high weekly rounds: rich-get-richer.
 - Infinity Castle at 1250/floor: floor 20 = 25k (100 pulls), floor 100 = 125k (500 pulls = 2.5 Mythic pities). Repeats at 250/floor: if a floor takes ~5 min, that is ~12 pulls/hour, close to a full day of heist (16-20 pulls). Repeat farming may outpace heist; depends on floor length.
 - 1% Mythic rate: about 13% of players reach the 200 pity without a Mythic (0.99^200). Pity = ~10-12 days of heist income.
-- 1-3% trait-roll drops plus 5 rolls per unit = slow trait progress for most players (likely intended).
+- 1-3% trait-roll drops plus 3 rolls per unit = slow trait progress for most players (likely intended).
 
 ## 13. Equipment (approved by user)
 User: 3 slots (helmet, chest plate, weapon); buffs stack on top of traits; crafted from story/raid/challenge materials; prestigious gear from the weekly heist (higher rounds = better chance). No stat rerolls.
@@ -307,7 +307,7 @@ Balance guardrails:
 17. Gauntlet: resolved (see section 8).
 18. Branching map: resolved (random presets both sides).
 19. Autoplay and shop: resolved (autoplay does not use the shop).
-20. Does the bench count toward "5 rolls per unit" or team limits for Contagious (1 per team)?
+20. Does the bench count toward "3 rolls per unit" or team limits for Contagious (1 per team)?
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
