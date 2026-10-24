@@ -64,19 +64,33 @@ User decisions:
 ### 3.4 Economy
 - Per-wave cash is a set number (about 1000 as a starting guess, User).
 - Team stays fixed (no unit shop), but a shop exists for temporary equipment/potions bought with in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
-- [Inference] Autoplay "has upgrades" (User); confirm whether cash also buys unit upgrades, and whether autoplay uses the shop.
+- Shop uses in-run cash only (User). Cash also buys unit upgrades (User). Whether autoplay uses the shop: open.
 
-### 3.5 Health, revive, rest, tiredness (User)
+### 3.5 Health, bench, tiredness (User)
+- Bench: 2 units in reserve (5 on field + 2 reserve).
 - Recall does not heal.
 - Sitting out heals 20% per round.
-- A unit at 0 HP falls. A medic can sacrifice its healing for the next round to revive a fallen unit at 25% HP.
-- Tiredness: units that do too much "work" fill a tired bar, which nerfs SPA. User: "spa now correlates to how often the unit moves". Sitting out lowers the bar.
+- Healing sources: medics and sitting out. No revive (User: two forms of healing is enough). A unit at 0 HP stays down for the run.
+- SPA sets how often a unit moves (and acts): high SPA = slow, low SPA = fast.
+- Tiredness bar (nerfs SPA as it fills):
+
+| Event | Tiredness |
+|---|---|
+| Each move | +3% |
+| Each kill | +5% |
+| Taking damage | +7.5% |
+| Recall | -10% |
+| Upgrade | -5% |
+| Sitting out | lowers bar (amount open) |
+
+- User floated "Maybe a reduction on top of it?" for SPA-trait units, which move more and tire faster. Read as: SPA-trait units gain less tiredness; confirm (question 16).
 
 Review flags ([Inference]):
-- Team is 5 and fights are 5v5, so sitting a unit out means fighting 4v5. Is the roster bigger than 5 (a bench), or is sitting out a real sacrifice? (question 15)
-- Unclear: does "SPA correlates to how often the unit moves" mean movement fills the tired bar, or that SPA now also sets move frequency? (question 16)
-- SPA trait halves SPA. If SPA also drives movement or work, SPA-trait units tire faster; decide if that is intended.
-- Three rest mechanics (HP, revive, tiredness) all push toward benching. Strong depth, but heavy for new players and for autoplay logic. Tutorialize each one.
+- +7.5% per damage instance: a unit hit ~13 times is fully tired. Tanks/walls exist to be hit, so they tire fastest. Consider scaling by damage taken (% of max HP) or capping per round.
+- Fast units (low SPA) move more, so +3% per move punishes speed. Maybe intended; balance with SPA trait reduction.
+- Recall happens after every group, so -10% is a guaranteed reset each group; the real tiredness budget is per group.
+- Effect at 100% tired is undefined (how much SPA nerf, any other penalty).
+- Many systems (HP, bench, tiredness, shop) need tutorials and autoplay logic for each.
 
 ## 4. Units
 - Roles (proposal): Shooter, Burst, Area, Wall, Support/Medic, Economy, Control.
@@ -140,11 +154,12 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 
 - Infinity Castle (first update, Demon Slayer): endless floors up the map. Ideas: floor modifiers (one rule per floor), a boss every 10th floor, persistent damage across floors with limited recovery.
 - Rest sites between groups (like a campfire): heal part of the team or take a buff, costs something.
-- Branching map (User: in): "ydk what you're gonna get" — outcomes hidden. [Inference] A fully blind choice is a coin flip, not a decision; consider partial hints (icons, danger level) so the pick involves skill.
+- Branching map (User: in): both sides random, drawn from multiple enemy squad presets; no fixed hard side vs weak side. [Inference] It is a coin flip rather than a decision; acceptable if the goal is variety (and resisting macros), not choice.
 - Daily oddity: one rule set per day (e.g. no medics, double enemy speed) with bonus rolls.
 - Ghost duels: fight another player's saved team asynchronously, no live PvP netcode needed.
 - Raid boss: a large boss fight with abilities mattering most.
-- Gauntlet (User: becomes a difficulty level, not a mode). Old definition ("no recall heals") no longer applies since recall never heals; proposal: no sit-out healing and no revives.
+- Gauntlet (User: a difficulty level): no shop, no heals, 1.5x tiredness, 250% luck boost on all drops in the stage.
+  - [Inference] If Gauntlet is the best place for drops, top players will farm only Gauntlet; other difficulties may feel pointless for loot. Unclear if "250% luck" means 2.5x or 3.5x.
 - Counter pick: enemy composition reacts to the class you used most.
 
 ## 9. Monetization
@@ -176,12 +191,14 @@ Update principle: no single unit absorbs months of dev time.
 7. Which classes exist in full, and the final class-to-trait map.
 8. Enemy types and boss mechanics for the auto battler.
 9. Shop: item list (equipment, potions), prices, and whether cash also buys unit upgrades.
-10. Fallen units: resolved (stay down unless a medic revives at 25%).
+10. Fallen units: resolved (stay down for the run; no revive).
 11. Recall: resolved (no heal; sitting out heals 20%/round).
 12. Rolls per challenge, and whether the trait pick resets on a later reroll.
 13. Which of the section 8 modes are in the first release.
 14. Infinity Castle "expansion": what is the twist?
-15. Bench: is the run roster larger than 5, or does sitting out mean fighting with fewer units?
-16. Tiredness: what counts as "work" (attacks, movement, damage taken), and what does "SPA correlates to how often the unit moves" mean exactly?
-17. Gauntlet difficulty rules.
-18. Branching map: fully hidden, or partial hints?
+15. Bench: resolved (2 reserve).
+16. Tiredness: amount removed by sitting out; effect at 100%; does the SPA trait get reduced tiredness gain; is damage-taken per hit or scaled?
+17. Gauntlet: resolved (see section 8); clarify 250% luck = 2.5x or 3.5x.
+18. Branching map: resolved (random presets both sides).
+19. Does autoplay use the shop?
+20. Does the bench count toward "5 rolls per unit" or team limits for Contagious (1 per team)?
