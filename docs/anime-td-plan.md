@@ -212,7 +212,18 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
   - Bold chrome/gradient logo text with outlines.
   - Layout: square art centered on a blurred, enlarged copy of itself.
   - Two of four look painted/illustrated rather than rendered.
-- Not checked: ALS in-game model screenshots (the wiki blocks automated requests).
+- In-game model references (fan wikis, viewed 2026-10-24 via the MediaWiki API):
+  - Anime Last Stand (target): https://alsroblox.fandom.com/wiki/File:Saitama_in_game.png, https://alsroblox.fandom.com/wiki/File:Sukuna_in_game.png, https://alsroblox.fandom.com/wiki/File:Whitebeard_in_game.png, https://alsroblox.fandom.com/wiki/File:Zuffy(TimeSkip)Model.png, https://alsroblox.fandom.com/wiki/File:Vagata(Super)Model.png, https://alsroblox.fandom.com/wiki/File:Frieren-new-model.png, https://alsroblox.fandom.com/wiki/File:Kokushibo-CB.png, https://alsroblox.fandom.com/wiki/File:RengokuEvo-CB.png, https://alsroblox.fandom.com/wiki/File:NEWSukunaCB.png
+  - Anime Adventures: https://animeadventures.fandom.com/wiki/File:Golden_King_(Lord_of_Heroes).png, https://animeadventures.fandom.com/wiki/File:Sea_God_(Tyrant_of_the_Seas).png, https://animeadventures.fandom.com/wiki/File:Spearer_(Child_of_Light).png, https://animeadventures.fandom.com/wiki/File:Illusionist_(Fusion).png
+  - Anime Defenders: https://animedefenders.fandom.com/wiki/File:Jadefire_knight_model.png, https://animedefenders.fandom.com/wiki/File:Ocean_Guardian.png, https://animedefenders.fandom.com/wiki/File:Electric_Cyborg1.png
+  - Anime Vanguards (contrast, what NOT to aim for): https://animevanguards.fandom.com/wiki/File:Lord_Friezo_Golden_Model.png, https://animevanguards.fandom.com/wiki/File:Riner_Giant_Model.png, https://animevanguards.fandom.com/wiki/File:Scientist_Model.png, https://animevanguards.fandom.com/wiki/File:Cu_Chulainn_(Child_of_Light)_Pose.png
+- Art notes from these images (my reading):
+  - Body: standard R6 blocky body (box limbs, square torso). Keep it.
+  - Identity comes from 4 things: a big custom hair mesh, a 2D anime face decal (large eyes with highlights, clear expression), clothing textures with drawn shading (abs, folds, trims), and 1-3 signature accessories (hat, weapon, horns, mask).
+  - Quality ladder: ALS 2024 models are simple; ALS 2025 card art and Anime Adventures have cel-shaded, more detailed faces and layered hair. Vanguards uses fully sculpted custom body meshes (golden Frieza-style body, giant titan), which is the level the user does not want; reserve that for giant bosses at most.
+  - Evolved/shiny variants add aura glow and particles rather than new models.
+  - ALS shows a ground ring under placed units.
+- Naming pattern ([Inference]): every game checked uses parody names for licensed characters (ALS: Zuffy, Vagata, Kohan, Baldy, Strongest Sorcerer; Vanguards: Vogita, Lord Friezo, Alucord, Song Jinwu; Anime Adventures: Golden King, Experiment X; Anime Defenders: Muscular Sorcerer). This looks like the genre's standard way to lower takedown risk. Our roster uses real names (Zenitsu, Muzan, Gojo...). User accepted the IP risk; parody names are a cheap extra safeguard (question 15).
 
 ## 9. Monetization
 - Free: 2x/3x speed, autoplay, UI options (colorblind mode, UI size).
@@ -389,3 +400,4 @@ Still open:
 12. Tech plan for the build session (scripts, data, saving).
 13. Content for the update after launch.
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
+15. Use parody names (like Zuffy / Vogita) or real character names?
