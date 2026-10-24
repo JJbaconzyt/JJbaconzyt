@@ -72,7 +72,7 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 
 | Trait | Definition |
 |---|---|
-| Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would |
+| Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would. User clarification: "Doubling effect only applies when a unit that doesn't generate cash has the trait and is on the field killing when applicable" |
 | Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User) |
 | Damage (rarest) | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (User confirmed: attacks twice as often) |
@@ -80,9 +80,10 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 | Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
 | All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
 
-Obtaining traits (User): through story, codes, and challenges. Not via gacha.
-- [Inference] Rarest trait (Damage) should come from the hardest challenge, not codes. Codes can be shared widely, so a strong trait from a code becomes the default.
-- [Inference] Fixed sources make trait hierarchy controllable: each source gets a tier (story = common traits, challenges = mid/rare, codes = low-impact or one-time).
+Obtaining traits (User): through story, codes, and challenges. Codes give rerolls. Trait rerolls are "hella rare", but a reroll path guarantees a mythic ("Maybe trait rerolls are hella rare, but you're guaranteed to get a mythic?" - User, phrased as a proposal).
+- [Inference] This resembles Anime Galaxies' "500 rerolls guarantees any mythic trait" which Balakay criticized. His stated problem: one trait is so good the guarantee just hands everyone the same trait. Whether the guarantee is a random mythic or a chosen one decides if this repeats it (question 14).
+- [Inference] Codes are widely shared, so keep reroll amounts per code small.
+- [Inference] Rarest trait (Damage) should not be the default mythic outcome; weight or gate it.
 
 Review flags:
 - [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
@@ -130,7 +131,8 @@ Unlocks come from short hard challenges, not repeated stages. [Inference] from V
 | 2 | MVP: 6 units, 8 enemies, 10 waves + boss, tutorial, summon with pity, traits, save data |
 | 3 | Closed playtest + pick-rate telemetry; tune balance and multiplier cap |
 | 4 | Launch: World 1, 3 modes (story, challenge, endless) |
-| 5 | Update cadence: small frequent updates (new unit + stage + counter), one rebalance patch per quarter |
+| 5 | First update (User): Demon Slayer, built around Infinity Castle ("a staple in these games, but we can expand on it") |
+| 6 | Update cadence: small frequent updates (new unit + stage + counter), one rebalance patch per quarter |
 
 Update principle: no single unit absorbs months of dev time; ship breadth (units, modes, QoL) per update.
 
@@ -145,6 +147,10 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 8. Farm trait: does the 30% stack with the doubling, or replace it?
 9. Full class list and which class maps to which trait (incl. Contagious and All rounder). Given so far: Speedster, Ranger, Controller, Specialist, Punisher.
 13. Concrete unique game modes, traits, and units (the hook).
+14. Reroll guarantee: random mythic or chosen mythic? Pity count? Does the guarantee reset?
+15. Infinity Castle: what is the "expansion" beyond a standard endless/floor mode?
+16. Farm trait: does the doubling also affect the base money per wave on non-income units, or only kills?
+17. Demon Slayer update uses existing IP; see section 1 risk.
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
 12. Commons: evolve/fodder rules (how many Commons per upgrade, which target units).
