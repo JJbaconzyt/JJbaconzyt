@@ -231,6 +231,12 @@ Launch strategy (User):
   - Raid (2): Gojo, Sukuna (so the launch raid is Jujutsu Kaisen).
   - Banner (3): Sung Jin-woo (User) + 2 picked by me (proposal): Luffy (One Piece), Goku (Dragon Ball). Chosen for popularity and anime variety.
   - Raid gems (proposal): 300 gems per clear, plus the 35% capsule roll. Beats an Infinity Castle repeat (250). At ~5 min per clear: ~3.6k gems/hour (~14 pulls/hour), so Mythic pity (200 pulls) is ~14 hours of raid. Daily heist stays the best per-run payout.
+  - Non-Mythic units (User): lesser-known characters from big anime; some may evolve into Mythics in later updates, giving them a future use. List below is my proposal (no Demon Slayer, since all Demon Slayer units are Mythic):
+    - Common: Usopp (One Piece), Yamcha (Dragon Ball), Ino (Naruto), Mineta (My Hero Academia)
+    - Rare: Rock Lee (Naruto), Nobara (Jujutsu Kaisen), Kirishima (My Hero Academia), Renji (Bleach)
+    - Epic: Todo (Jujutsu Kaisen), Shikamaru (Naruto), Kurapika (Hunter x Hunter), Power (Chainsaw Man)
+    - Legendary: Byakuya (Bleach), Hawks (My Hero Academia), Killua (Hunter x Hunter)
+    - Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
   - Total 11 Mythics; user is increasing Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
 
 Flags ([Inference]):
