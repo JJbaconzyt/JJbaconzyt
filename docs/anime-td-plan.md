@@ -386,6 +386,43 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 
 [Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps (no Legendary tank, no Epic/Legendary medic, Economy only at Common) are accepted (User): lower-rarity units get replaced, so not every role needs every rarity. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
+## 16. In-game names (User: altered but recognizable; names are my proposal)
+Kit tables above use the real names for clarity; the game uses these. They avoid copying competitors' parody names (Zuffy, Vogita, Song Jinwu, etc.).
+
+| Character | In-game name | Rarity |
+|---|---|---|
+| Zenitsu | Zenitzu | Mythic |
+| Inosuke | Inosuka | Mythic |
+| Giyu | Giyo | Mythic |
+| Douma | Dooma | Mythic |
+| Kokushibo | Kokushiba | Mythic |
+| Muzan | Muzen | Mythic |
+| Gojo | Goju | Mythic |
+| Sukuna | Sukano | Mythic |
+| Sung Jin-woo | Sung Jinu | Mythic |
+| Luffy | Ruffy | Mythic |
+| Goku | Goko | Mythic |
+| Tsunade | Tsunada | Mythic |
+| Gyomei | Gyomay | Mythic |
+| Nami | Nammi | Common |
+| Yamcha | Yamchu | Common |
+| Ino | Ina | Common |
+| Mineta | Minetta | Common |
+| Rock Lee | Rok Li | Rare |
+| Nobara | Nobura | Rare |
+| Kirishima | Kirishimo | Rare |
+| Sakura | Sakra | Rare |
+| Todo | Tado | Epic |
+| Shikamaru | Shikamaro | Epic |
+| Kurapika | Kurapica | Epic |
+| Power | Powa | Epic |
+| Chad | Chadd | Epic |
+| Byakuya | Byakuyo | Legendary |
+| Hawks | Hawkz | Legendary |
+| Killua | Kilua | Legendary |
+
+[Inference] Altered names lower takedown risk but do not remove it; models stay recognizable. ALS also carries an "inspired content" disclaimer in its game description; do the same.
+
 ## 11. Open questions
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
@@ -400,4 +437,4 @@ Still open:
 12. Tech plan for the build session (scripts, data, saving).
 13. Content for the update after launch.
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
-15. Use parody names (like Zuffy / Vogita) or real character names?
+15. Names: resolved (altered but recognizable, section 16). Approve the name list.
