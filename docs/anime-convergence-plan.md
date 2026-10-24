@@ -430,7 +430,7 @@ Kit tables above use the real names for clarity; the game uses these. They avoid
 - Contagious (1 per team) counts the bench too (7-unit run roster).
 - Name (User): **Anime Convergence**. Other candidates considered, checked against Roblox search on 2026-10-24: Anime Rift, Anime Convergence, Anime Crossfire, Anime Fracture, Anime Warbands showed no same-name game in top results. Taken: Anime Nexus (an RNG game, ~630 players), Anime Multiverse (tiny game). [Inference] Roblox does not reserve names; a clash only matters for search.
 
-## 18. Tech plan (for the build session; planning only, no code here)
+## 18. Tech plan (approved by user; for the build session, planning only)
 Roblox API and library names below are from my knowledge, [Unverified]; confirm in the build session.
 
 ### 18.1 Principles
@@ -527,6 +527,7 @@ tests/             sim + economy tests
 | M10 | Playtest, telemetry, balance pass, launch prep | Ready to launch when the market window opens |
 
 ### 18.14 Tech risks ([Inference])
+- The user has no coding experience and plans to vibecode. Mitigations: build one milestone per session; each milestone ends with its "done when" check played in Studio by the user; automated tests guard the combat sim and saving; consider a Roblox developer reviewing data saving, purchases, and remotes before launch (dupes and exploits are where unreviewed code fails worst).
 - DataStore limits and failures: retries, budgets, session locking.
 - Exploiters: never trust the client; rate-limit remotes.
 - Server cost: one reserved server per solo run is simple but means many small servers; acceptable on Roblox [Unverified].
@@ -538,6 +539,5 @@ Resolved (see sections above): IP (existing anime, risk accepted), classes, enem
 
 Still open:
 8. Raid payout (300 gems proposed) and clear length: set in testing.
-12. Tech plan: drafted in section 18; review it.
 13. Content for the update after launch: TBD (User).
 14. Pre-launch checks: [Unverified] Roblox rules on paid random items and on macros.
