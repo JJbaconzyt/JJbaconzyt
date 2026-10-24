@@ -160,7 +160,7 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 8. Farm trait: does the 30% stack with the doubling, or replace it?
 9. Full class list and which class maps to which trait (incl. Contagious and All rounder). Given so far: Speedster, Ranger, Controller, Specialist, Punisher.
 13. Concrete unique game modes, traits, and units (the hook).
-14. Trait rolls: does "5 rolls/unit" mean 5 rolls on each unit, then pick? What is a roll's cost and source (rare rerolls vs a common currency)? Does the pick reset on re-rolling later?
+14. Trait rolls (User confirmed): 5 rolls per unit, then pick the trait. Rolls come from codes and challenges. Open: how many rolls per challenge, and does the pick reset if the player rerolls later?
 15. Infinity Castle: what is the "expansion" beyond a standard endless/floor mode?
 16. Autoplay: exactly what makes it "not efficient" on stages (randomized waves, ability timing, resource limits)?
 17. Demon Slayer update uses existing IP; see section 1 risk.
