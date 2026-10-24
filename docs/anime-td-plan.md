@@ -194,6 +194,16 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
 
 Update principle: no single unit absorbs months of dev time.
 
+Launch strategy (User):
+- Heavy launch, since the project is vibecoded (AI-assisted).
+- Timing: not now; user says Anime Adventures is coming back ([Unverified]; a recent Anime Adventures "Update 21" video title was seen in related videos, not confirmed). Best window: after competitors ship several flop updates or during a content drought.
+
+[Inference] Risks:
+- AI speeds up code, not balance testing, art, animation, Roblox data-save bugs, or playtesting. Bigger scope = more bugs at launch.
+- Galaxies commenters criticized it for feeling "AI generated". Hand-made art and UI matter.
+- A drought can't be predicted. Build now, keep a launch-ready build, pick the date by watching competitors.
+- Proposal: define a cut line, so if the window opens early, the launch ships with the core and the rest becomes the first update.
+
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
 2. Team size and art pipeline (Roblox-style models vs high-poly).
