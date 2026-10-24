@@ -217,7 +217,7 @@ Launch strategy (User):
 - Story: 3 stages x 5 acts.
 - Challenges.
 - One raid, any anime; capsules give 1-3 units from that anime; side content.
-- Unit roster (User: cut filler; counts are my proposal): 4 Common, 4 Rare, 4 Epic, 3 Legendary, 11 Mythic = 26 units, varied anime (was 35: 8/6/6/5/10). Demon Slayer units are inside the 35 and are all Mythic.
+- Unit roster (User: cut filler; counts are my proposal): 4 Common, 4 Rare, 5 Epic, 3 Legendary, 13 Mythic = 29 units, varied anime (was 35: 8/6/6/5/10). All Demon Slayer units are Mythic.
 - Infinity Castle (at launch): alternating buffs/debuffs per floor, gems per clear, no cap, enemies scale forever. Eventually too hard even for the best players; more unlocks per update via balanced powercreep.
 - Demon Slayer units from Infinity Castle floor milestones: 5 Zenitsu, 10 Inosuke, 20 Giyu, 35 Douma, 50 Kokushibo, 100 Muzan.
 - Daily heist: max 10 rounds; enemies start scaled under you and end over you; ~4 rounds beatable no matter what; 1k gems per round, boss +5k. May also give equipment materials.
@@ -238,15 +238,11 @@ Launch strategy (User):
   - Banner (3): Sung Jin-woo (User) + 2 picked by me (proposal): Luffy (One Piece), Goku (Dragon Ball). Chosen for popularity and anime variety.
   - Raid gems (proposal): 300 gems per clear, plus the 35% capsule roll. Beats an Infinity Castle repeat (250). At ~5 min per clear: ~3.6k gems/hour (~14 pulls/hour), so Mythic pity (200 pulls) is ~14 hours of raid. Daily heist stays the best per-run payout.
   - Non-Mythic units (User): lesser-known characters from big anime; some may evolve into Mythics in later updates, giving them a future use. List below is my proposal (no Demon Slayer, since all Demon Slayer units are Mythic):
-    - Common: Usopp (One Piece), Yamcha (Dragon Ball), Ino (Naruto), Mineta (My Hero Academia)
-    - Rare: Rock Lee (Naruto), Nobara (Jujutsu Kaisen), Kirishima (My Hero Academia), Renji (Bleach)
-    - Epic: Todo (Jujutsu Kaisen), Shikamaru (Naruto), Kurapika (Hunter x Hunter), Power (Chainsaw Man)
-    - Legendary: Byakuya (Bleach), Hawks (My Hero Academia), Killua (Hunter x Hunter)
-    - Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
+    - Current list and kits: see section 15.
   - Total 11 Mythics; user is increasing Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
 
 Flags ([Inference]):
-- Mythic count rising (11+) while Common-Legendary are "filler" (User). Filler cut to 15 non-Mythics (User decision, counts proposed). [Inference] Give them a lasting job (evolve fodder, equipment materials).
+- Mythic count rising (11+) while Common-Legendary are "filler" (User). Filler cut to 16 non-Mythics (User decision, counts proposed). [Inference] Give them a lasting job (evolve fodder, equipment materials).
 - Most gacha pulls (99%) land on filler, and only 3 Mythics are on the banner while 8 come from content. The banner's main value is Sung Jin-woo + 2.
 - Sung Jin-woo was the center of Balakay's Vanguards backlash; expect comparisons.
 - Rarity x trait x equipment stack with no cap (User); enemies are tuned around them.
@@ -323,7 +319,7 @@ Changes from the first draft (User feedback): Gojo is no longer a medic (no cano
 
 ## 15. Non-Mythic kits (proposal)
 Rules: passives only, no abilities. Commons have no passive (their role is the kit). Base DPS anchors: Common ~50, Rare ~100, Epic ~170, Legendary ~260. Canon references are from my knowledge, [Unverified].
-Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji -> Sakura (gives an early heal medic).
+Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji -> Sakura (gives an early heal medic). Chad added as the Epic tank (User asked for one).
 
 | Unit | Rarity | Class / type | Role | SPA | Passive |
 |---|---|---|---|---|---|
@@ -339,13 +335,14 @@ Swaps vs the earlier list: Usopp -> Nami (gives an early Economy unit), Renji ->
 | Shikamaru (Naruto) | Epic | Specialist | Control | Medium | Shadow Bind: every 4th attack makes the target skip a turn (bosses immune) |
 | Kurapika (Hunter x Hunter) | Epic | Punisher | Boss damage | Medium | Chain Jail: +40% damage to bosses |
 | Power (Chainsaw Man) | Epic | Punisher | Bruiser | Medium | Blood Fiend: +20% damage while below 50% HP |
+| Chad (Bleach) | Epic | Balanced, Tank type | Counter tank | Slow | El Directo: when hit, 25% chance to counterattack for 50% damage |
 | Byakuya (Bleach) | Legendary | Balanced | AoE | Slow | Senbonzakura: attacks also hit all other enemies for 30% |
 | Hawks (My Hero Academia) | Legendary | Speedster | Fast multi-hit | Fast | Feathers: each attack also hits a random enemy for 25% |
 | Killua (Hunter x Hunter) | Legendary | Speedster | Fast control | Fast | Lightning: 15% chance to stun on hit (bosses immune) |
 
 Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 
-[Inference] Gaps: no Epic or Legendary tank or medic; Economy only at Common. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
+[Inference] Tank line: Kirishima (Rare, damage reduction), Chad (Epic, counter), Gyomei (Mythic, ally buff). Remaining gaps: no Legendary tank; no Epic or Legendary medic; Economy only at Common. Fine for filler, but mid-game teams may lack a tank/medic between Rare and Mythic.
 
 ## 11. Open questions
 1. Original vs existing-IP characters (user leaning existing; Demon Slayer first update).
