@@ -137,7 +137,7 @@ Balance rules:
 4. New units ship with counter content.
 
 ## 6. Traits
-User: only mythic traits; all trait rarities equal, but a trait matching the unit's class has double chance. The player picks the trait on the 3rd roll on the same unit (was 5). Rolls come from codes (1-2 per code, restricted to updates) and challenges. Traits also come from story. One trait per unit. Goal: a hierarchy of traits, but no default trait that nearly every unit runs.
+User: only mythic traits; all trait rarities equal, but a trait matching the unit's class has double chance. The player picks the trait on the 3rd roll on the same unit (was 5). Example odds (User): class-matched trait 20%, every other trait 10% (other traits lowered to compensate). [Inference] That example has 9 entries, but there are 8 traits (Farm, Lifesteal, Damage, SPA, Control, Contagious, All rounder, Barrage); with 8 traits the same 2:1 weighting is 22.2% / 11.1%. Units with no class-matched trait (e.g. Medic): 12.5% each. Confirm, or add a 9th trait. Rolls come from codes (1-2 per code, restricted to updates) and challenges. Traits also come from story. One trait per unit. Goal: a hierarchy of traits, but no default trait that nearly every unit runs.
 
 | Trait | Definition |
 |---|---|
