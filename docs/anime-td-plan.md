@@ -209,7 +209,7 @@ Launch strategy (User):
 - Story: 3 stages x 5 acts.
 - Challenges.
 - One raid, any anime; capsules give 1-3 units from that anime; side content.
-- 35 base characters, varied anime: 8 Common, 6 Rare, 6 Epic, 5 Legendary, 10 Mythic. Demon Slayer units are inside the 35 and are all Mythic.
+- Unit roster (User: cut filler; counts are my proposal): 4 Common, 4 Rare, 4 Epic, 3 Legendary, 11 Mythic = 26 units, varied anime (was 35: 8/6/6/5/10). Demon Slayer units are inside the 35 and are all Mythic.
 - Infinity Castle (at launch): alternating buffs/debuffs per floor, gems per clear, no cap, enemies scale forever. Eventually too hard even for the best players; more unlocks per update via balanced powercreep.
 - Demon Slayer units from Infinity Castle floor milestones: 5 Zenitsu, 10 Inosuke, 20 Giyu, 35 Douma, 50 Kokushibo, 100 Muzan.
 - Daily heist: max 10 rounds; enemies start scaled under you and end over you; ~4 rounds beatable no matter what; 1k gems per round, boss +5k. May also give equipment materials.
@@ -228,10 +228,11 @@ Launch strategy (User):
   - Infinity Castle (6): Zenitsu, Inosuke, Giyu, Douma, Kokushibo, Muzan.
   - Raid (2): Gojo, Sukuna (so the launch raid is Jujutsu Kaisen).
   - Banner (3): Sung Jin-woo (User) + 2 picked by me (proposal): Luffy (One Piece), Goku (Dragon Ball). Chosen for popularity and anime variety.
+  - Raid gems (proposal): 300 gems per clear, plus the 35% capsule roll. Beats an Infinity Castle repeat (250). At ~5 min per clear: ~3.6k gems/hour (~14 pulls/hour), so Mythic pity (200 pulls) is ~14 hours of raid. Daily heist stays the best per-run payout.
   - Total 11 Mythics; user is increasing Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
 
 Flags ([Inference]):
-- Mythic count rising (11+) while Common-Legendary are "filler" (User). [Inference] 25 filler units is a lot of dev/art work for units used about an hour; consider fewer filler units, or give them a lasting job (evolve fodder, equipment materials).
+- Mythic count rising (11+) while Common-Legendary are "filler" (User). Filler cut to 15 non-Mythics (User decision, counts proposed). [Inference] Give them a lasting job (evolve fodder, equipment materials).
 - Most gacha pulls (99%) land on filler, and only 3 Mythics are on the banner while 8 come from content. The banner's main value is Sung Jin-woo + 2.
 - Sung Jin-woo was the center of Balakay's Vanguards backlash; expect comparisons.
 - Rarity x trait x equipment = three stacked multipliers; the combined cap matters more now.
@@ -267,5 +268,5 @@ Flags ([Inference]):
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
-25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: raid gem payout; confirm banner Mythic picks; final unit counts per rarity.
+25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: confirm banner Mythic picks, raid payout (300 proposed), and roster counts (26 proposed); raid clear length.
 26. Update 1: ships with release; next update content open.
