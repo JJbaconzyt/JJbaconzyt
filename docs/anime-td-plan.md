@@ -5,7 +5,7 @@ Status: draft. Items marked "User:" are decisions quoted or paraphrased closely 
 ## 1. Vision
 Classic path-based anime tower defense on Roblox (User decision: PvZ-style lanes scrapped, "it turns into way more of a defender"). Gacha kept (genre staple). Traits kept, balanced as a hierarchy. Balanced powercreep is wanted.
 
-[Inference] Risk: classic path TD is the genre default, so it needs a distinguishing hook to avoid the "slop" feel the user wants to avoid. Earlier suggestion: units bend or block the path (maze). Not decided.
+Hook (User): "unique game modes, traits, and units." [Inference] This is a direction, not yet a design. Classic path TD is the genre default, so at least one concrete mechanic or mode needs specifying to avoid the "slop" feel. Earlier suggestion: units bend or block the path (maze). Not decided.
 
 Open decision: characters. User wants existing anime IP. [Unverified] this risks copyright takedown/ban, worse with paid gacha. Safe path: original characters built on familiar archetypes. User to decide.
 
@@ -28,7 +28,7 @@ Open decision: characters. User wants existing anime IP. [Unverified] this risks
 
 ### 3.1 Units, roles, classes, passives
 - Roles (proposal): Shooter, Burst, Area, Wall, Support, Economy (Farm), Control.
-- Classes (User): each unit has a class that corresponds to a trait. If the unit's trait matches its class, the trait is 20% stronger.
+- Classes (User): each unit has a class that corresponds to a trait. If the unit's trait matches its class, the trait is 20% stronger. Class examples given: Speedster, Ranger, Controller, Specialist, Punisher, "etc." Class-to-trait mapping not yet decided (question 9).
 - Passives (User): should matter for big units. Not "anime last stand" style where there are around 5 complex passives; simple, but present.
 - One trait per unit (User).
 
@@ -72,13 +72,17 @@ One per unit. Goal (User): "to have a hierarchy of traits, but to not have one t
 
 | Trait | Definition |
 |---|---|
-| Farm | User: "30% money on farm unit"; base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would |
+| Farm | User: 30% money applies only to units whose sole purpose is to generate income. Base money per wave about 1000, trait doubles that; any enemy killed by a unit with the Farm trait gives double the money it normally would |
 | Range | "Unit gains whole map range, and will target the closest enemy. Force single target only." Closest = closest to the base (User) |
 | Damage (rarest) | "300% damage boost, no passives allowed" |
 | SPA | "Cuts SPA in half, nerfs all other stats by 20%" (User confirmed: attacks twice as often) |
 | Control | "each hit applies random debuff effect"; bosses resist (User) |
 | Contagious (biggest, 1 per team) | "mark any enemy hit with the status effect 'contagious'. Once a contagious enemy gets hit by a unit causing the status effect, they will instantly take 10% damage and spread it along to 3 other enemies. Contagious enemies getting hit 3 times get slowed by 15%". User: damage is 10% of max HP or of the hit, whichever does more; bosses take 5% of current HP |
 | All rounder | "buff all stats by 20%" (User confirmed: SPA shortened too) |
+
+Obtaining traits (User): through story, codes, and challenges. Not via gacha.
+- [Inference] Rarest trait (Damage) should come from the hardest challenge, not codes. Codes can be shared widely, so a strong trait from a code becomes the default.
+- [Inference] Fixed sources make trait hierarchy controllable: each source gets a tier (story = common traits, challenges = mid/rare, codes = low-impact or one-time).
 
 Review flags:
 - [Inference] Damage trait 300% is the rarest and resembles Balakay's 250% trait complaint. "No passives" only costs units that have meaningful passives; small units with weak passives may still default to it.
@@ -137,9 +141,10 @@ Update principle: no single unit absorbs months of dev time; ship breadth (units
 4. Solo vs co-op.
 5. Pity numbers and odds.
 6. Rarity multiplier per tier and combined cap with traits.
-7. How traits are obtained (roll, pity, odds per trait).
-8. Farm trait: does the "30% money on farm unit" still apply on top of the doubling?
-9. Class list and which class maps to which trait (incl. Contagious and All rounder).
+7. Which source (story, codes, challenges) gives which trait; any trait caps per source.
+8. Farm trait: does the 30% stack with the doubling, or replace it?
+9. Full class list and which class maps to which trait (incl. Contagious and All rounder). Given so far: Speedster, Ranger, Controller, Specialist, Punisher.
+13. Concrete unique game modes, traits, and units (the hook).
 10. Contagious: does the spread chain from newly infected enemies? Per-hit or per-trigger limit?
 11. Control: debuff pool and proc limits for fast attackers.
 12. Commons: evolve/fodder rules (how many Commons per upgrade, which target units).
