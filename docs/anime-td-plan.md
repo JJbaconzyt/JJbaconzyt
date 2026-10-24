@@ -63,6 +63,19 @@ User decisions:
 [Inference] Autoplay still has to decide placement and recall, which is where it should fall behind a human on hard content.
 [Unverified] Roblox rules on macros/automation; check before building anti-macro measures.
 
+### 3.4b Shop potions (User list; values and prices are my placeholders)
+Bought with in-run cash (per-wave cash ~1000). Not available in Gauntlet. Autoplay does not buy them.
+
+| Potion | Effect (one unit) | Price |
+|---|---|---|
+| Stamina Tonic | -30% tiredness | 600 |
+| Power Elixir | +25% damage for the next group | 800 |
+| Haste Draught | -20% SPA (faster) for the next group | 800 |
+| Healing Potion | Heal 30% max HP | 600 |
+| Skip Scroll (User: "possible", e.g. skip round) | Skip the next enemy group | 3000, max 1 per run |
+
+[Inference] Skip Scroll: skipping a group should give no loot from it, or it becomes a free loot shortcut. Healing Potion adds a third heal source beside medics and sitting out; the price is the limiter.
+
 ### 3.4 Economy
 - Per-wave cash is a set number (about 1000 as a starting guess, User).
 - Team stays fixed (no unit shop), but a shop exists for temporary equipment/potions bought with in-run cash (User). [Inference] Keep it in-run cash only; Robux-bought potions would hit Balakay's "greedy" complaint.
@@ -158,7 +171,7 @@ User: only mythic traits; all trait rarities equal, but a trait matching the uni
 
 Review flags ([Inference]):
 - Chosen-trait pick on the 3rd roll is the Galaxies pattern in cheaper form: everyone can pick the best trait. The hierarchy depends on traits being close in power and on class fit.
-- Damage trait at 300% needs rebalancing now that all traits are mythic with equal odds.
+- Damage trait stays at 300% (User: keep).
 - Contagious at 25% max HP with no proc limit kills normal enemies in four hits; revisit in playtest.
 - Farm is only useful if cash matters in a run with no shop.
 - 3 rolls per unit is cheap; class-match double chance mostly matters for the first 2 rolls; codes and challenges must supply them without making them trivial.
@@ -183,6 +196,11 @@ User: unique game modes, traits, and units; challenges play into the "oddity" id
   - 250% luck = 2.5x (User). User: Gauntlet is "practically unmatchable", requires really good units, and that is fair.
   - [Inference] Only top teams can farm 2.5x drops, so the strongest players get stronger faster (rich-get-richer); watch the gap in playtest.
 - Counter pick: enemy composition reacts to the class you used most.
+
+## 9b. Art style (User)
+- Blocky Roblox characters, semi-high quality. Target: Anime Last Stand level. Not Anime Vanguards level (too high quality for what is needed).
+- [Inference] Supports the Vanguards feedback: commenters called the high-poly Sung Jin-woo model uncanny in Roblox.
+- References: Anime Last Stand on Roblox (https://www.roblox.com/games/12886143095/Anime-Last-Stand) and its fan wiki (https://alsroblox.fandom.com/wiki/Units). I could not load images: this cloud session's network policy blocks roblox.com and the wiki image host. Collect reference screenshots in the build session or allow those domains.
 
 ## 9. Monetization
 - Free: 2x/3x speed, autoplay, UI options (colorblind mode, UI size).
@@ -348,12 +366,11 @@ Evolution candidates (proposal): Rock Lee, Killua, Todo, Kurapika.
 Resolved (see sections above): IP (existing anime, risk accepted), classes, enemies and bosses, launch content, Infinity Castle, heists, raid, equipment, traits and odds, Mythic kits, tiredness, bench, recall, fallen units, Gauntlet, branching map, autoplay, roster (29 units), role gaps.
 
 Still open:
-3. Damage trait at 300% (flagged for rebalancing in section 6).
-5. Shop: potion/temporary equipment list and prices.
+5. Shop: confirm potion values/prices (section 3.4b); is temporary equipment also sold?
 6. Does a trait pick reset on a later reroll?
 7. Does the bench count for Contagious (1 per team)?
 8. Raid payout (300 gems proposed) and clear length: set in testing.
-9. Art style, model style (Roblox-style vs high-poly), setting.
+9. Setting/world theme (art style resolved, section 9b).
 10. Solo vs co-op.
 11. Game name.
 12. Tech plan for the build session (scripts, data, saving).
