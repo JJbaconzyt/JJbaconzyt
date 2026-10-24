@@ -222,9 +222,18 @@ Launch strategy (User):
 - Raid: 35% chance for 1-3 capsules. Capsules contain all currencies except trait rolls (materials count as currency); 10% chance for units.
 - Infinity Castle: 1250 gems per floor on first clear (changed from 2500); repeats give 1/5 (250 gems = 1 pull).
 - Gacha (User): Mythic rate 1%, Mythic pity 200 pulls (50k gems).
+- Infinity Castle floor = 5 rounds; boss every 5 floors (User).
+- User expects players to grind raids rather than repeat Infinity Castle floors (better payout per effort). [Unverified] prediction; raid gem payout is not yet defined.
+- Mythic sources:
+  - Infinity Castle (6): Zenitsu, Inosuke, Giyu, Douma, Kokushibo, Muzan.
+  - Raid (2): Gojo, Sukuna (so the launch raid is Jujutsu Kaisen).
+  - Banner (3): Sung Jin-woo (User) + 2 picked by me (proposal): Luffy (One Piece), Goku (Dragon Ball). Chosen for popularity and anime variety.
+  - Total 11 Mythics; user is increasing Mythic count because Common-Legendary units are filler that nobody uses past the first hour.
 
 Flags ([Inference]):
-- 10 of 35 units are Mythic: top-heavy pool.
+- Mythic count rising (11+) while Common-Legendary are "filler" (User). [Inference] 25 filler units is a lot of dev/art work for units used about an hour; consider fewer filler units, or give them a lasting job (evolve fodder, equipment materials).
+- Most gacha pulls (99%) land on filler, and only 3 Mythics are on the banner while 8 come from content. The banner's main value is Sung Jin-woo + 2.
+- Sung Jin-woo was the center of Balakay's Vanguards backlash; expect comparisons.
 - Rarity x trait x equipment = three stacked multipliers; the combined cap matters more now.
 - Infinity Castle self-caps by difficulty, so gem inflation is limited; top players still earn most.
 - Floor 100 Muzan is a top-player skill chase; Balakay liked hard unlock stages over long grinds.
@@ -258,5 +267,5 @@ Flags ([Inference]):
 22. Weekly heist: resolved.
 23. Equipment: item list and stats (slots resolved).
 24. Raid: resolved.
-25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: floor length; which Mythics are gacha vs Infinity Castle only.
+25. Infinity Castle: resolved (1250 first clear, 1/5 on repeats). Open: raid gem payout; confirm banner Mythic picks; final unit counts per rarity.
 26. Update 1: ships with release; next update content open.
